@@ -9,7 +9,7 @@ function errorHandler(error, req, res, next) {
     winstonLogger.error(message);
   } else {
     winstonLogger.fatal(message);
-    // sendErrorEmail(message) //aqui podriamos enviar un correo informando el error
+    // sendErrorEmail(message) //here can send email
     // console.log(error);
   }
 

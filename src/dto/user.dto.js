@@ -22,7 +22,7 @@ const passwordSchema = Joi.string()
     if (!/[^\w]/.test(value)) {
       return helpers.message("La contraseña debe incluir al menos un carácter especial.");
     }
-    return value; // Devuelve el valor si pasa todas las validaciones
+    return value; // if all ok
   });
 
 export const userDto = Joi.object({
@@ -48,24 +48,7 @@ export const userDto = Joi.object({
     "any.required": "La edad es obligatoria.",
   }),
   //PASSWORD CONTROL///////////////////////////////////////////
-  //   password: Joi.string().min(4).max(15).required(),
-
-  /* password: Joi.string()
-    .pattern(new RegExp("^(?=.*[a-z])(?=.*[A-Z])(?=.*\\d)(?=.*[^a-zA-Z\\d]).{8,30}$"))
-    .messages({
-      "string.pattern.base":
-        "La contraseña debe tener entre 8 y 30 caracteres, incluyendo al menos una mayúscula, una minúscula, un número y un carácter especial.",
-      "any.required": "La contraseña es obligatoria.",
-    }), */
-  /*  repeat_password: Joi.string()
-    .valid(Joi.ref("password")) // Referencia a 'password' para validar que son iguales
-    .messages({
-      "any.only": "Las contraseñas deben coincidir.", // Mensaje personalizado
-      "any.required": "Debes repetir la contraseña.", // Mensaje si no se proporciona
-    }), */
-
   password: passwordSchema,
   /////////////////////////////////////////////////////////////
-
   role: Joi.string().optional(),
 });

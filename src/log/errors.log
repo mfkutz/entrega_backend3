@@ -1,1 +1,22 @@
 [31mfatal[39m: MongoDB connection error: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string. {"timestamp":"2024-11-04T22:57:50.844Z"}
+[31mfatal[39m: GET /api/user - USERSERVICE.GETALLUSES IS NOT A FUNCTION {"timestamp":"2024-11-05T14:48:06.744Z"}
+[31mfatal[39m: GET /api/user - USERSERVICE.GETALLUSER IS NOT A FUNCTION {"timestamp":"2024-11-05T14:49:34.178Z"}
+[33merror[39m: GET /api/user/66e21019b096eca75b9471e1 - NOT FOUND {"timestamp":"2024-11-05T14:53:54.064Z"}
+[31mfatal[39m: GET /api/user - USERSERVICE.GETALLUSER IS NOT A FUNCTION {"timestamp":"2024-11-05T14:54:05.981Z"}
+[31mfatal[39m: GET /api/user/67295348e5e91c628eccfc8 - CAST TO OBJECTID FAILED FOR VALUE "67295348E5E91C628ECCFC8" (TYPE STRING) AT PATH "_ID" FOR MODEL "USER" {"timestamp":"2024-11-05T14:54:48.878Z"}
+[31mfatal[39m: GET /api/user/s - CAST TO OBJECTID FAILED FOR VALUE "S" (TYPE STRING) AT PATH "_ID" FOR MODEL "USER" {"timestamp":"2024-11-05T14:55:03.259Z"}
+[33merror[39m: GET /api/user/67295348e5e91c628eccfc8d - NOT FOUND {"timestamp":"2024-11-05T14:55:16.082Z"}
+[33merror[39m: GET /api/user/67295348e5e91c628eccfc8d - NOT FOUND {"timestamp":"2024-11-05T14:55:31.979Z"}
+[33merror[39m: GET /api/user/67295348e5e91c628eccfc8d - NOT FOUND {"timestamp":"2024-11-05T14:55:34.586Z"}
+[33merror[39m: GET /api/user/67295348e5e91c628eccfc8d - NOT FOUND {"timestamp":"2024-11-05T14:55:41.829Z"}
+[33merror[39m: GET /api/user/67295348e5e91c628eccfc8d - NOT FOUND {"timestamp":"2024-11-05T14:55:51.461Z"}
+[31mfatal[39m: GET /api/user/67295348e5e91c628eccfc8d - USERSERVICE.GETUSERBYI IS NOT A FUNCTION {"timestamp":"2024-11-05T14:57:05.540Z"}
+[33merror[39m: GET /api/user/67295348e5e91c628eccfc8d - NOT FOUND {"timestamp":"2024-11-05T14:57:16.632Z"}
+[33merror[39m: DELETE /api/user/66e21019b096eca75b9471e1 - NOT FOUND {"timestamp":"2024-11-05T15:00:45.677Z"}
+[33merror[39m: DELETE /api/user/66e21019b096eca75b9471e1 - NOT FOUND {"timestamp":"2024-11-05T15:01:16.234Z"}
+[31mfatal[39m: DELETE /api/user/66e21019b096eca75b9471e1 - USERSERVICE.DELETEUSE IS NOT A FUNCTION {"timestamp":"2024-11-05T15:01:24.501Z"}
+[33merror[39m: DELETE /api/user/66e21019b096eca75b9471e1 - NOT FOUND {"timestamp":"2024-11-05T15:01:37.379Z"}
+[33merror[39m: PUT /api/user/67295348e5e91c628eccfc8d - USER NOT FOUND {"timestamp":"2024-11-05T15:06:23.641Z"}
+[31mfatal[39m: PUT /api/user/67295348e5e91c628eccfc8d - USERSERVICE.UPDATEUSE IS NOT A FUNCTION {"timestamp":"2024-11-05T15:07:33.176Z"}
+[33merror[39m: PUT /api/user/67295348e5e91c628eccfc8d - USER NOT FOUND {"timestamp":"2024-11-05T15:14:47.988Z"}
+[31mfatal[39m: GET /api/auth/logout - USER NOT FOUND  {"timestamp":"2024-11-05T15:50:30.918Z"}

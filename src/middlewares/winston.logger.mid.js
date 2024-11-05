@@ -3,7 +3,17 @@ import winstonLogger from "../utils/winston.util.js";
 function winston(req, res, next) {
   try {
     req.logger = winstonLogger;
-    req.logger.http(`${req.method} ${req.url} - ${new Date().toLocaleDateString()}`);
+
+    // Check IP in x-forwarded-for header or direct connection
+    const forwardedIp = req.headers["x-forwarded-for"]?.split(",")[0];
+    const directIp = req.connection.remoteAddress;
+
+    req.logger.http(
+      `Forwarded IP: ${forwardedIp || "N/A"}, Direct IP: ${directIp} - ${req.method} ${
+        req.url
+      } - ${new Date().toLocaleDateString()}`
+    );
+
     return next();
   } catch (error) {
     return next(error);

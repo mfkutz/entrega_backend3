@@ -19,8 +19,8 @@ const errors = {
     statusCode: 403,
     description: "You do not have permission to access the requested resource.",
   },
-  notFound: {
-    message: "Not Found",
+  userNotFound: {
+    message: (resource) => `${resource} Not Found`,
     statusCode: 404,
     description: "The requested resource could not be found.",
   },

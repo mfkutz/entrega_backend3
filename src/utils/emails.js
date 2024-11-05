@@ -1,5 +1,6 @@
 import nodemailer from "nodemailer";
 import { config } from "../config/config.js";
+import winstonLogger from "./winston.util.js";
 
 class MailService {
   constructor() {
@@ -63,9 +64,9 @@ class MailService {
         subject,
         html,
       });
-      console.log("Email sent:", info);
+      winstonLogger.info("Email sent:", info);
     } catch (error) {
-      console.error("Error sending email:", error);
+      winstonLogger.fatal("Error sending email:", error);
     }
   }
 }

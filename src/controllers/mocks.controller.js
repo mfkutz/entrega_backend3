@@ -2,6 +2,8 @@ import { userService } from "../services/user.service.js";
 import { productService } from "../services/product.service.js";
 import { faker } from "@faker-js/faker";
 import { v4 as uuidv4 } from "uuid";
+import { createHash } from "../utils/hash.functions.js";
+import { config } from "../config/config.js";
 
 class DataMock {
   async createUsers(req, res) {
@@ -11,13 +13,14 @@ class DataMock {
         const first_name = faker.person.firstName().toLowerCase();
         const last_name = faker.person.lastName().toLowerCase();
         const age = Math.floor(Math.random() * (65 - 18 + 1)) + 18;
+        const hashPassword = await createHash(config.PASSWORD_USERS_MOCK);
 
         const data = {
           first_name,
           last_name,
-          email: first_name + last_name + "@mfk23.com",
+          email: first_name + last_name + "@" + config.MODE + "mail" + ".com",
           age,
-          password: "1234",
+          password: hashPassword,
         };
 
         await userService.createUser(data);
@@ -49,10 +52,8 @@ class DataMock {
           stock,
           category,
         };
-
         await productService.create(data);
       }
-
       res.json({ response: "Products created", message: `Total products created ${n}` });
     } catch (error) {
       res.status(500).json({ response: "Server Error", details: error.message });
