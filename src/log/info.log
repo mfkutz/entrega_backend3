@@ -1,0 +1,24 @@
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-04T22:46:20.882Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-04T22:50:11.214Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-04T22:52:11.456Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-04T22:54:59.422Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-04T22:57:03.480Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-04T22:57:03.534Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-04T22:57:19.999Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-04T22:57:20.026Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-04T22:57:32.809Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-04T22:57:32.836Z"}
+[31mfatal[39m: MongoDB connection error: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string. {"timestamp":"2024-11-04T22:57:50.844Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-04T22:57:50.849Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-04T22:58:10.165Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-04T22:58:10.191Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-04T23:01:54.363Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-04T23:01:54.523Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-04T23:02:20.574Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-04T23:02:20.595Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-04T23:02:44.155Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-04T23:02:44.177Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-04T23:03:30.196Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-04T23:03:30.219Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-04T23:04:05.449Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-04T23:04:05.470Z"}
