@@ -1,65 +1,66 @@
 import { cartService } from "../services/cart.service.js";
 import { productService } from "../services/product.service.js";
 import { ticketService } from "../services/ticket.service.js";
+import { CustomError } from "../utils/errors/custom.error.js";
 import { mailService } from "../utils/emails.js";
 import { v4 as uuidv4 } from "uuid";
+import errors from "../utils/errors/dictionaty.errors.js";
 
 class CartController {
-  async addCart(req, res) {
+  async addCart(req, res, next) {
     try {
       const cart = await cartService.create({ products: [] });
       res.status(200).json({ result: "success", cart });
     } catch (error) {
-      res.status(500).json({ result: "Error", message: error });
+      next(error);
     }
   }
 
-  async getAll(req, res) {
+  async getAll(req, res, next) {
     try {
       const carts = await cartService.getAll();
       res.status(200).json({ result: "success", carts });
     } catch (error) {
-      res.status(500).json({ result: "Error", message: error });
+      next(error);
     }
   }
 
-  async getById(req, res) {
+  async getById(req, res, next) {
     const { cid } = req.params;
     try {
       const cart = await cartService.getById(cid);
-      if (!cart) return res.status(404).json({ message: "Cart not found" });
+      if (!cart) return CustomError.newError(errors.notFound); //Cart not found
       res.status(200).json({ response: "success", cart });
     } catch (error) {
-      res.status(500).json({ response: "Error", message: error });
+      next(error);
     }
   }
 
-  async addProductToCart(req, res) {
+  async addProductToCart(req, res, next) {
     const { cid, pid } = req.params;
     const { quantity } = req.body;
     try {
-      if (!Number.isFinite(quantity))
-        return res.status(400).json({ response: "Error", message: "Quantity must be a number" });
+      if (!Number.isFinite(quantity)) return CustomError.newError(errors.badRequest); //400 - Quantity must be a number
 
       const cart = await cartService.getById(cid);
-      if (!cart) return res.status(404).json({ response: "Error", message: "Cart not found" });
+      if (!cart) return res.status(404).json({ response: "Error", message: "Cart not found" }); //404 - Cart not found
 
       const product = await productService.getById(pid);
       if (!product)
-        return res.status(404).json({ response: "Error", message: "Product not found" });
+        return res.status(404).json({ response: "Error", message: "Product not found" }); //404 - Product not found
 
       //Stock control
       if (quantity > product.stock)
-        return res.status(404).json({
+        return res.status(409).json({
           response: "Error",
-          message: "Out of stock",
+          message: "Out of stock", //409 - Out of stock
           in_stock: product.stock,
         });
 
       if (quantity < 1)
         return res
-          .status(404)
-          .json({ response: "Error", message: "Quantity cannot be less than 1" });
+          .status(400)
+          .json({ response: "Error", message: "Quantity cannot be less than 1" }); //400 - Quantity cannot be less than 1
 
       const existingProductIndex = cart.products.findIndex(
         (prod) => prod.product._id.toString() === pid.toString()
@@ -67,9 +68,9 @@ class CartController {
 
       if (existingProductIndex !== -1) {
         if (cart.products[existingProductIndex].quantity + quantity > product.stock)
-          return res.status(404).json({
+          return res.status(409).json({
             response: "Error",
-            message: "Out of stock",
+            message: "Out of stock", //409 - Out of stock
             in_stock: product.stock,
             you_have_in_cart: cart.products[existingProductIndex].quantity,
           });
@@ -81,7 +82,7 @@ class CartController {
       await cart.save();
       res.status(200).json({ result: "Success", message: "Product added to cart" });
     } catch (error) {
-      res.status(500).json({ response: "Error", message: error.message });
+      next(error);
     }
   }
 

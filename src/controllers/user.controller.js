@@ -16,7 +16,7 @@ class UserController {
     const { id } = req.params;
     try {
       const user = await userService.getUserById(id);
-      if (!user) return CustomError.newError(errors.userNotFound);
+      if (!user) return CustomError.newError(errors.notFound);
       res.status(200).json(user);
     } catch (error) {
       next(error);
@@ -27,7 +27,7 @@ class UserController {
     const { id } = req.params;
     try {
       const user = await userService.deleteUser(id);
-      if (!user) return CustomError.newError(errors.userNotFound);
+      if (!user) return CustomError.newError(errors.notFound);
       res.status(200).json({ message: "User deleted successfully" });
     } catch (error) {
       next(error);
@@ -45,7 +45,7 @@ class UserController {
         age,
         role,
       });
-      if (!user) return CustomError.newError(errors.userNotFound);
+      if (!user) return CustomError.newError(errors.notFound);
       res.status(200).json({ message: "User updated successfully", user });
     } catch (error) {
       next(error);

@@ -9,7 +9,7 @@ function winston(req, res, next) {
     const directIp = req.connection.remoteAddress;
 
     req.logger.http(
-      `Forwarded IP: ${forwardedIp || "N/A"}, Direct IP: ${directIp} - ${req.method} ${
+      `Direct IP: ${directIp}, Forwarded IP: ${forwardedIp || "N/A"} - ${req.method} ${
         req.url
       } - ${new Date().toLocaleDateString()}`
     );

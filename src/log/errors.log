@@ -20,3 +20,30 @@
 [31mfatal[39m: PUT /api/user/67295348e5e91c628eccfc8d - USERSERVICE.UPDATEUSE IS NOT A FUNCTION {"timestamp":"2024-11-05T15:07:33.176Z"}
 [33merror[39m: PUT /api/user/67295348e5e91c628eccfc8d - USER NOT FOUND {"timestamp":"2024-11-05T15:14:47.988Z"}
 [31mfatal[39m: GET /api/auth/logout - USER NOT FOUND  {"timestamp":"2024-11-05T15:50:30.918Z"}
+[31mfatal[39m: GET /api/mocks/products/2 - FAKER.COMMERCE.PRODUCT(...).TOLOWERCAS IS NOT A FUNCTION {"timestamp":"2024-11-06T11:11:35.873Z"}
+[31mfatal[39m: GET /api/mocks/products/2 - FAKER.COMMERCE.PRODUCT(...).TOLOWERCAS IS NOT A FUNCTION {"timestamp":"2024-11-06T11:15:11.238Z"}
+[33merror[39m: GET /api/user/67295348e5e91c628eccfc8c - (RESOURCE) => `${RESOURCE} NOT FOUND` {"timestamp":"2024-11-06T11:18:11.566Z"}
+[33merror[39m: GET /api/user/67295348e5e91c628eccfc8c - NOT FOUND {"timestamp":"2024-11-06T11:18:46.040Z"}
+[33merror[39m: GET /api/user/67295348e5e91c628eccfc8c - USER NOT FOUND {"timestamp":"2024-11-06T11:28:00.816Z"}
+[33merror[39m: GET /api/user/67295348e5e91c628eccfc8c -  NOT FOUND {"timestamp":"2024-11-06T11:29:36.164Z"}
+[33merror[39m: GET /api/user/67295348e5e91c628eccfc8c -  NOT FOUND {"timestamp":"2024-11-06T11:31:01.959Z"}
+[33merror[39m: GET /api/user/67295348e5e91c628eccfc8c - (RESOURCE) => `${RESOURCE} NOT FOUND` {"timestamp":"2024-11-06T11:36:27.539Z"}
+[33merror[39m: GET /api/user/67295348e5e91c628eccfc8c - RESOURCE NOT FOUND {"timestamp":"2024-11-06T11:37:03.336Z"}
+[33merror[39m: GET /api/user/67295348e5e91c628eccfc8c - RESOURCE NOT FOUND {"timestamp":"2024-11-06T12:00:01.620Z"}
+[31mfatal[39m: POST /api/product/ - E11000 DUPLICATE KEY ERROR COLLECTION: FIRST-BACKEND3-DEVELOPMENT.PRODUCTS INDEX: CODE_1 DUP KEY: { CODE: "C012" } {"timestamp":"2024-11-06T14:31:53.389Z"}
+[31mfatal[39m: POST /api/product/ - PRODUCTSERVICE.CREAT IS NOT A FUNCTION {"timestamp":"2024-11-06T14:32:09.634Z"}
+[31mfatal[39m: PUT /api/product/66f55674af5cf29818f843bb - PRODUCTSERVICE.UPDAT IS NOT A FUNCTION {"timestamp":"2024-11-06T15:47:23.317Z"}
+[31mfatal[39m: PUT /api/product/66f55674af5cf29818f843bb - USER IS NOT DEFINED {"timestamp":"2024-11-06T15:47:48.214Z"}
+[31mfatal[39m: PUT /api/product/672a3f0acf1250204472d0c6 - USER IS NOT DEFINED {"timestamp":"2024-11-06T15:48:44.386Z"}
+[31mfatal[39m: PUT /api/product/672a3f0acf1250204472d0c6 - USER IS NOT DEFINED {"timestamp":"2024-11-06T15:48:54.584Z"}
+[31mfatal[39m: PUT /api/product/672a3f0acf1250204472d0c6 - CUSTOMERROR IS NOT DEFINED {"timestamp":"2024-11-06T15:49:26.219Z"}
+[33merror[39m: PUT /api/product/672a3f0acf1250204472d0c6 - RESOURCE NOT FOUND {"timestamp":"2024-11-06T15:53:42.883Z"}
+[31mfatal[39m: PUT /api/product/672a3f0acf1250204472d0c6 - PRODUCTSERVICE.UPDAT IS NOT A FUNCTION {"timestamp":"2024-11-06T15:54:08.839Z"}
+[33merror[39m: PUT /api/product/672a3f0acf1250204472d0c6 - RESOURCE NOT FOUND {"timestamp":"2024-11-06T15:57:43.132Z"}
+[33merror[39m: GET /api/product/66e246777a5c31b004538abe - RESOURCE NOT FOUND {"timestamp":"2024-11-06T16:03:16.062Z"}
+[33merror[39m: GET /api/product/672b4feadffba5ab12eeee84 - RESOURCE NOT FOUND {"timestamp":"2024-11-06T16:09:23.945Z"}
+[33merror[39m: DELETE /api/product/66e247d9b36245efe60ec032 - RESOURCE NOT FOUND {"timestamp":"2024-11-06T16:11:32.615Z"}
+[33merror[39m: GET /api/product/672b4feadffba5ab12eeee83 - RESOURCE NOT FOUND {"timestamp":"2024-11-06T16:11:43.152Z"}
+[31mfatal[39m: GET /api/product/limit?=2 - CAST TO OBJECTID FAILED FOR VALUE "LIMIT" (TYPE STRING) AT PATH "_ID" FOR MODEL "PRODUCTS" {"timestamp":"2024-11-06T16:33:33.010Z"}
+[33merror[39m: GET /api/product?limit=10&page=200 - BAD REQUEST {"timestamp":"2024-11-06T16:37:57.221Z"}
+[33merror[39m: GET /api/product?limit=10&page=200 - BAD REQUEST {"timestamp":"2024-11-06T16:38:01.161Z"}

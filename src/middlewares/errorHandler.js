@@ -3,7 +3,7 @@ import winstonLogger from "../utils/winston.util.js";
 
 function errorHandler(error, req, res, next) {
   // console.log(error);
-
+  console.log("estamos llegando aqui helloooo");
   const message = `${req.method} ${req.url} - ${error.message.toUpperCase()}`;
   if (error.statusCode) {
     winstonLogger.error(message);

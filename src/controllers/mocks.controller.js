@@ -6,7 +6,7 @@ import { createHash } from "../utils/hash.functions.js";
 import { config } from "../config/config.js";
 
 class DataMock {
-  async createUsers(req, res) {
+  async createUsers(req, res, next) {
     const { n } = req.params;
     try {
       for (let i = 0; i < n; i++) {
@@ -27,11 +27,11 @@ class DataMock {
       }
       res.status(201).json({ response: "Users created OK", message: `Total users created: ${n}` });
     } catch (error) {
-      res.status(500).json({ response: "Server Error", details: error.message });
+      next(error);
     }
   }
 
-  async createProducts(req, res) {
+  async createProducts(req, res, next) {
     const { n } = req.params;
     try {
       for (let i = 0; i < n; i++) {
@@ -56,7 +56,7 @@ class DataMock {
       }
       res.json({ response: "Products created", message: `Total products created ${n}` });
     } catch (error) {
-      res.status(500).json({ response: "Server Error", details: error.message });
+      next(error);
     }
   }
 }

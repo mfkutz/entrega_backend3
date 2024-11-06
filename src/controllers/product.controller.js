@@ -1,10 +1,12 @@
 import { productService } from "../services/product.service.js";
+import { CustomError } from "../utils/errors/custom.error.js";
+import errors from "../utils/errors/dictionaty.errors.js";
 
 class ProductController {
-  async addProduct(req, res) {
+  async addProduct(req, res, next) {
     let { title, description, price, status, thumbnail, code, stock, category } = req.body;
 
-    status = stock > 0; //return boolean
+    status = stock > 0;
     try {
       let product = await productService.create({
         title,
@@ -18,15 +20,15 @@ class ProductController {
       });
       res.status(201).json({ result: "Success", message: product });
     } catch (error) {
-      res.status(500).json({ result: "Error creating product", message: error.message });
+      next(error);
     }
   }
 
-  async updateProduct(req, res) {
+  async updateProduct(req, res, next) {
     const { id } = req.params;
     let { title, description, price, status, thumbnail, code, stock, category } = req.body;
 
-    status = stock > 0; //return boolean
+    status = stock > 0;
     try {
       const product = await productService.update(id, {
         title,
@@ -39,52 +41,46 @@ class ProductController {
         category,
       });
 
-      if (!product)
-        return res
-          .status(404)
-          .json({ result: "Error updating product", message: "Product not found" });
+      if (!product) return CustomError.newError(errors.notFound);
+
       res.status(200).json({ result: "Product updated successfully", message: product });
     } catch (error) {
-      res.status(500).json({ result: "Error updating product", message: "Product not found" });
+      next(error);
     }
   }
 
-  async getAll(req, res) {
+  async getAll(req, res, next) {
     try {
       const allProducts = await productService.getAll();
       res.status(200).json({ result: "Success", products: allProducts });
     } catch (error) {
-      res.status(500).json({ result: "Error getting products" });
+      next(error);
     }
   }
 
-  async getById(req, res) {
+  async getById(req, res, next) {
     const { id } = req.params;
     try {
       const product = await productService.getById(id);
-      if (!product) return res.status(404).json({ result: "Product not found" });
+      if (!product) return CustomError.newError(errors.notFound);
       res.status(200).json({ result: "Product found", product });
     } catch (error) {
-      res.status(500).json({ result: "Error getting products" });
+      next(error);
     }
   }
 
-  async deleteProduct(req, res) {
+  async deleteProduct(req, res, next) {
     const { id } = req.params;
     try {
       const product = await productService.delete(id);
-      if (!product)
-        return res
-          .status(404)
-          .json({ result: "Error deleting product", message: "Product not found" });
-
+      if (!product) return CustomError.newError(errors.notFound);
       res.status(200).json({ result: "Product deleted successfully", message: product });
     } catch (error) {
-      res.status(500).json({ result: "Error deleting product", message: error });
+      next(error);
     }
   }
 
-  async paginate(req, res) {
+  async paginate(req, res, next) {
     const { limit, page, sort, category, available } = req.query;
     let queries = {};
 
@@ -92,11 +88,7 @@ class ProductController {
       //Validation of page number
       if (page) {
         const pageNumber = parseInt(page);
-        if (isNaN(pageNumber) || pageNumber <= 0) {
-          return res
-            .status(400)
-            .json({ result: "Error getting products", message: "Invalid page number" });
-        }
+        if (isNaN(pageNumber) || pageNumber <= 0) return CustomError.newError(errors.badRequest); //Invalid page number - TODO personalized message
       }
 
       let options = {
@@ -122,9 +114,7 @@ class ProductController {
 
       const products = await productService.paginate(queries, options);
 
-      if (parseInt(page) > products.totalPages) {
-        return res.status(400).json({ response: "Error", message: "Invalid page number" });
-      }
+      if (parseInt(page) > products.totalPages) return CustomError.newError(errors.badRequest); //Invalid page number - TODO personalized message
 
       const baseUrl = req.protocol + "://" + req.get("host") + req.originalUrl;
       const prevLink = products.hasPrevPage
@@ -148,7 +138,7 @@ class ProductController {
       };
       res.status(200).send({ response: "ok", message: response });
     } catch (error) {
-      res.status(500).json({ result: "Error getting products", message: error });
+      next(error);
     }
   }
 }

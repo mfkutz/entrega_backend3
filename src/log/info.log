@@ -191,3 +191,206 @@
 [34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-05T17:03:35.294Z"}
 [34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-05T21:20:25.534Z"}
 [34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-05T21:20:25.572Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T11:08:42.411Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T11:08:42.435Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T11:11:14.453Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T11:11:14.479Z"}
+[31mfatal[39m: GET /api/mocks/products/2 - FAKER.COMMERCE.PRODUCT(...).TOLOWERCAS IS NOT A FUNCTION {"timestamp":"2024-11-06T11:11:35.873Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T11:15:06.875Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T11:15:06.901Z"}
+[31mfatal[39m: GET /api/mocks/products/2 - FAKER.COMMERCE.PRODUCT(...).TOLOWERCAS IS NOT A FUNCTION {"timestamp":"2024-11-06T11:15:11.238Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T11:15:51.321Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T11:15:51.386Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T11:16:32.359Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T11:16:32.396Z"}
+[33merror[39m: GET /api/user/67295348e5e91c628eccfc8c - (RESOURCE) => `${RESOURCE} NOT FOUND` {"timestamp":"2024-11-06T11:18:11.566Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T11:18:44.338Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T11:18:44.368Z"}
+[33merror[39m: GET /api/user/67295348e5e91c628eccfc8c - NOT FOUND {"timestamp":"2024-11-06T11:18:46.040Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T11:20:00.321Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T11:20:00.377Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T11:20:09.437Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T11:20:09.473Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T11:20:17.160Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T11:20:17.181Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T11:23:57.294Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T11:23:57.316Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T11:27:20.248Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T11:27:20.274Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T11:27:51.357Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T11:27:51.394Z"}
+[33merror[39m: GET /api/user/67295348e5e91c628eccfc8c - USER NOT FOUND {"timestamp":"2024-11-06T11:28:00.816Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T11:28:23.204Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T11:28:23.229Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T11:29:33.291Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T11:29:33.313Z"}
+[33merror[39m: GET /api/user/67295348e5e91c628eccfc8c -  NOT FOUND {"timestamp":"2024-11-06T11:29:36.164Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T11:30:44.281Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T11:30:44.301Z"}
+[33merror[39m: GET /api/user/67295348e5e91c628eccfc8c -  NOT FOUND {"timestamp":"2024-11-06T11:31:01.959Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T11:34:46.420Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T11:34:46.442Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T11:36:09.860Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T11:36:09.893Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T11:36:16.417Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T11:36:16.565Z"}
+[33merror[39m: GET /api/user/67295348e5e91c628eccfc8c - (RESOURCE) => `${RESOURCE} NOT FOUND` {"timestamp":"2024-11-06T11:36:27.539Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T11:36:57.839Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T11:36:57.861Z"}
+[33merror[39m: GET /api/user/67295348e5e91c628eccfc8c - RESOURCE NOT FOUND {"timestamp":"2024-11-06T11:37:03.336Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T11:59:28.043Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T11:59:28.064Z"}
+[33merror[39m: GET /api/user/67295348e5e91c628eccfc8c - RESOURCE NOT FOUND {"timestamp":"2024-11-06T12:00:01.620Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T14:26:10.001Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T14:26:10.072Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T14:26:12.595Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T14:26:12.647Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T14:26:18.092Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T14:26:18.112Z"}
+[31mfatal[39m: POST /api/product/ - E11000 DUPLICATE KEY ERROR COLLECTION: FIRST-BACKEND3-DEVELOPMENT.PRODUCTS INDEX: CODE_1 DUP KEY: { CODE: "C012" } {"timestamp":"2024-11-06T14:31:53.389Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T14:32:05.641Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T14:32:05.665Z"}
+[31mfatal[39m: POST /api/product/ - PRODUCTSERVICE.CREAT IS NOT A FUNCTION {"timestamp":"2024-11-06T14:32:09.634Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T14:32:26.393Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T14:32:26.415Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T15:42:49.323Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T15:42:49.347Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T15:46:10.046Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T15:46:10.066Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T15:46:51.278Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T15:46:51.301Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T15:46:56.791Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T15:46:56.820Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T15:47:19.182Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T15:47:19.206Z"}
+[31mfatal[39m: PUT /api/product/66f55674af5cf29818f843bb - PRODUCTSERVICE.UPDAT IS NOT A FUNCTION {"timestamp":"2024-11-06T15:47:23.317Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T15:47:45.166Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T15:47:45.191Z"}
+[31mfatal[39m: PUT /api/product/66f55674af5cf29818f843bb - USER IS NOT DEFINED {"timestamp":"2024-11-06T15:47:48.214Z"}
+[31mfatal[39m: PUT /api/product/672a3f0acf1250204472d0c6 - USER IS NOT DEFINED {"timestamp":"2024-11-06T15:48:44.386Z"}
+[31mfatal[39m: PUT /api/product/672a3f0acf1250204472d0c6 - USER IS NOT DEFINED {"timestamp":"2024-11-06T15:48:54.584Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T15:49:23.447Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T15:49:23.469Z"}
+[31mfatal[39m: PUT /api/product/672a3f0acf1250204472d0c6 - CUSTOMERROR IS NOT DEFINED {"timestamp":"2024-11-06T15:49:26.219Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T15:49:45.831Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T15:49:45.854Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T15:49:56.977Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T15:49:57.020Z"}
+[33merror[39m: PUT /api/product/672a3f0acf1250204472d0c6 - RESOURCE NOT FOUND {"timestamp":"2024-11-06T15:53:42.883Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T15:54:06.938Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T15:54:06.963Z"}
+[31mfatal[39m: PUT /api/product/672a3f0acf1250204472d0c6 - PRODUCTSERVICE.UPDAT IS NOT A FUNCTION {"timestamp":"2024-11-06T15:54:08.839Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T15:54:23.370Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T15:54:23.398Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T15:54:31.093Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T15:54:31.115Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T15:54:36.180Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T15:54:36.203Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T15:54:57.623Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T15:54:57.644Z"}
+[33merror[39m: PUT /api/product/672a3f0acf1250204472d0c6 - RESOURCE NOT FOUND {"timestamp":"2024-11-06T15:57:43.132Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T16:01:02.048Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T16:01:02.083Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T16:01:17.941Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T16:01:17.986Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T16:01:32.149Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T16:01:32.172Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T16:01:51.290Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T16:01:51.315Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T16:02:36.903Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T16:02:36.924Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T16:02:46.155Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T16:02:46.197Z"}
+[33merror[39m: GET /api/product/66e246777a5c31b004538abe - RESOURCE NOT FOUND {"timestamp":"2024-11-06T16:03:16.062Z"}
+[33merror[39m: GET /api/product/672b4feadffba5ab12eeee84 - RESOURCE NOT FOUND {"timestamp":"2024-11-06T16:09:23.945Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T16:10:44.639Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T16:10:44.666Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T16:10:54.007Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T16:10:54.027Z"}
+[33merror[39m: DELETE /api/product/66e247d9b36245efe60ec032 - RESOURCE NOT FOUND {"timestamp":"2024-11-06T16:11:32.615Z"}
+[33merror[39m: GET /api/product/672b4feadffba5ab12eeee83 - RESOURCE NOT FOUND {"timestamp":"2024-11-06T16:11:43.152Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T16:12:00.913Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T16:12:00.938Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T16:14:15.517Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T16:14:15.540Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T16:14:18.210Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T16:14:18.232Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T16:15:23.628Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T16:15:23.662Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T16:16:15.037Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T16:16:15.057Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T16:16:38.767Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T16:16:38.794Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T16:17:19.615Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T16:17:19.638Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T16:17:39.964Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T16:17:40.042Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T16:17:42.346Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T16:17:42.369Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T16:18:12.370Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T16:18:12.402Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T16:18:43.428Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T16:18:43.457Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T16:18:53.310Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T16:18:53.333Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T16:27:49.653Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T16:27:49.675Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T16:28:18.985Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T16:28:19.006Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T16:28:22.499Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T16:28:22.521Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T16:29:23.445Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T16:29:23.466Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T16:29:39.100Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T16:29:39.129Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T16:29:43.868Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T16:29:43.906Z"}
+[31mfatal[39m: GET /api/product/limit?=2 - CAST TO OBJECTID FAILED FOR VALUE "LIMIT" (TYPE STRING) AT PATH "_ID" FOR MODEL "PRODUCTS" {"timestamp":"2024-11-06T16:33:33.010Z"}
+[33merror[39m: GET /api/product?limit=10&page=200 - BAD REQUEST {"timestamp":"2024-11-06T16:37:57.221Z"}
+[33merror[39m: GET /api/product?limit=10&page=200 - BAD REQUEST {"timestamp":"2024-11-06T16:38:01.161Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T16:48:34.712Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T16:48:34.739Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T16:49:17.560Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T16:49:17.582Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T16:49:41.784Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T16:49:41.809Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T16:49:44.104Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T16:49:44.125Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T16:50:22.914Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T16:50:22.961Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T16:50:59.578Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T16:50:59.639Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T16:52:37.587Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T16:52:37.612Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T16:53:07.109Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T16:53:07.129Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T16:53:35.353Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T16:53:35.378Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T16:53:52.203Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T16:53:52.228Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T16:54:06.285Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T16:54:06.312Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T16:54:17.382Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T16:54:17.406Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T17:01:27.882Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T17:01:27.907Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T17:59:06.817Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T17:59:06.846Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T18:00:28.471Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T18:00:28.500Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T18:03:43.565Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T18:03:43.590Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T18:03:52.076Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T18:03:52.097Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T18:03:56.854Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T18:03:56.875Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T18:04:00.954Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T18:04:00.991Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T18:04:06.744Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T18:04:06.764Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T18:04:11.385Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T18:04:11.432Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T18:04:49.787Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T18:04:49.810Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-06T18:05:15.141Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-06T18:05:15.168Z"}
