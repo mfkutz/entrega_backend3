@@ -59,11 +59,20 @@ class CartController {
         (prod) => prod.product._id.toString() === pid.toString()
       );
 
-      if (existingProductIndex !== -1) {
+      /*  if (existingProductIndex !== -1) {
         if (cart.products[existingProductIndex].quantity + quantity > product.stock)
           return res.status(409).json({
             response: "Error",
             message: "Out of stock", //409 - Out of stock - TO DO  Personalized message
+            in_stock: product.stock,
+            you_have_in_cart: cart.products[existingProductIndex].quantity,
+          }); */
+
+      ///Testing this
+      //409 - Out of stock - TO DO  Personalized message
+      if (existingProductIndex !== -1) {
+        if (cart.products[existingProductIndex].quantity + quantity > product.stock)
+          return CustomError.newError(errors.badRequest, "Out of Stock", {
             in_stock: product.stock,
             you_have_in_cart: cart.products[existingProductIndex].quantity,
           });
@@ -220,15 +229,8 @@ class CartController {
         }
       });
 
-      /* if (productsWithoutStock.length > 0) {
-        return res.status(400).json({
-          error: "Insufficient stock", // 400 - Insuficient stock - TODO
-          details: productsWithoutStock,
-        });
-      } */
-
       if (productsWithoutStock.length > 0)
-        return CustomError.newError(errors.badRequest, "Insuficient stock", productsWithoutStock); // 400 - Insuficient stock - TODO
+        return CustomError.newError(errors.badRequest, "Insuficient stock", productsWithoutStock);
 
       const promises = cart.products.map((p) =>
         productService.discountStock(p.product._id, p.quantity)

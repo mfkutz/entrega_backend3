@@ -611,3 +611,33 @@
 [33merror[39m: POST /api/cart/66eb191721c88dbb0c26490b/purchase - CART NOT FOUND {"timestamp":"2024-11-07T01:55:59.764Z"}
 [34minfo[39m: Email sent: {"accepted":["admin@gmail.com"],"ehlo":["SIZE 5242880","PIPELINING","ENHANCEDSTATUSCODES","8BITMIME","DSN","AUTH PLAIN LOGIN CRAM-MD5"],"envelope":{"from":"info@dev-ecommerce.com","to":["admin@gmail.com"]},"envelopeTime":1580,"messageId":"<8346ade4-00ec-f7f7-1cbd-33c961d1cc08@dev-ecommerce.com>","messageSize":934,"messageTime":777,"rejected":[],"response":"250 2.0.0 Ok: queued","timestamp":"2024-11-07T01:56:12.148Z"}
 [33merror[39m: POST /api/cart/672b7dbacb56859478fb39c2/purchase - INSUFICIENT STOCK - Details: [object Object] {"timestamp":"2024-11-07T01:58:26.420Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-07T10:14:43.784Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-07T10:14:43.818Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-07T10:16:43.060Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-07T10:16:43.081Z"}
+[33merror[39m: POST /api/cart/672b7dbacb56859478fb39c2/product/672b4feadffba5ab12eeee85 - OUT OF STOCK {"timestamp":"2024-11-07T10:17:28.757Z"}
+[33merror[39m: GET /api/cart/66eb191721c88dbb0c26490b - CART NOT FOUND {"timestamp":"2024-11-07T10:17:47.595Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-07T10:20:39.546Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-07T10:20:39.566Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-07T10:21:37.366Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-07T10:21:37.386Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-07T10:44:14.468Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-07T10:44:14.490Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-07T10:45:42.994Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-07T10:45:43.021Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-07T10:45:51.245Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-07T10:45:51.328Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-07T10:47:02.233Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-07T10:47:02.254Z"}
+[33merror[39m: POST /api/cart/672b7dbacb56859478fb39c2/product/672b4feadffba5ab12eeee85 - OUT OF STOCK {"timestamp":"2024-11-07T10:47:48.958Z"}
+[33merror[39m: POST /api/cart/672b7dbacb56859478fb39c2/product/672b4feadffba5ab12eeee85 - OUT OF STOCK {"timestamp":"2024-11-07T10:47:53.698Z"}
+[33merror[39m: POST /api/cart/672b7dbacb56859478fb39c2/product/672b4feadffba5ab12eeee85 - OUT OF STOCK {"timestamp":"2024-11-07T10:47:58.574Z"}
+[33merror[39m: POST /api/cart/672b7dbacb56859478fb39c2/product/672b4feadffba5ab12eeee85 - OUT OF STOCK - Details: [object Object] {"timestamp":"2024-11-07T10:48:31.549Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-07T10:49:16.603Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-07T10:49:16.624Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-07T10:49:23.083Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-07T10:49:23.108Z"}
+[33merror[39m: DELETE /api/cart/66eb191721c88dbb0c26490b - CART NOT FOUND {"timestamp":"2024-11-07T10:50:14.318Z"}
+[34minfo[39m: Email sent: {"accepted":["admin@gmail.com"],"ehlo":["SIZE 5242880","PIPELINING","ENHANCEDSTATUSCODES","8BITMIME","DSN","AUTH PLAIN LOGIN CRAM-MD5"],"envelope":{"from":"info@dev-ecommerce.com","to":["admin@gmail.com"]},"envelopeTime":543,"messageId":"<8bfbee7d-af20-fbbb-947c-5765e8eaf1f4@dev-ecommerce.com>","messageSize":934,"messageTime":396,"rejected":[],"response":"250 2.0.0 Ok: queued","timestamp":"2024-11-07T11:18:01.563Z"}
+[33merror[39m: POST /api/cart/672ca16702ceb4403aaf7d8b/product/672b4feadffba5ab12eeee85 - OUT OF STOCK {"timestamp":"2024-11-07T11:19:27.062Z"}
+[33merror[39m: PUT /api/cart/672ca16702ceb4403aaf7d8b/product/672b7dd2cb56859478fb39c8 - OUT OF STOCK {"timestamp":"2024-11-07T11:22:37.071Z"}

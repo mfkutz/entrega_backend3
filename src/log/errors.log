@@ -59,3 +59,12 @@
 [33merror[39m: POST /api/cart/672b7dbacb56859478fb39c2/product/672b4feadffba5ab12eeee85 - QUANTITY MUST BE A NUMBER {"timestamp":"2024-11-07T00:53:53.532Z"}
 [33merror[39m: POST /api/cart/66eb191721c88dbb0c26490b/purchase - CART NOT FOUND {"timestamp":"2024-11-07T01:55:59.764Z"}
 [33merror[39m: POST /api/cart/672b7dbacb56859478fb39c2/purchase - INSUFICIENT STOCK - Details: [object Object] {"timestamp":"2024-11-07T01:58:26.420Z"}
+[33merror[39m: POST /api/cart/672b7dbacb56859478fb39c2/product/672b4feadffba5ab12eeee85 - OUT OF STOCK {"timestamp":"2024-11-07T10:17:28.757Z"}
+[33merror[39m: GET /api/cart/66eb191721c88dbb0c26490b - CART NOT FOUND {"timestamp":"2024-11-07T10:17:47.595Z"}
+[33merror[39m: POST /api/cart/672b7dbacb56859478fb39c2/product/672b4feadffba5ab12eeee85 - OUT OF STOCK {"timestamp":"2024-11-07T10:47:48.958Z"}
+[33merror[39m: POST /api/cart/672b7dbacb56859478fb39c2/product/672b4feadffba5ab12eeee85 - OUT OF STOCK {"timestamp":"2024-11-07T10:47:53.698Z"}
+[33merror[39m: POST /api/cart/672b7dbacb56859478fb39c2/product/672b4feadffba5ab12eeee85 - OUT OF STOCK {"timestamp":"2024-11-07T10:47:58.574Z"}
+[33merror[39m: POST /api/cart/672b7dbacb56859478fb39c2/product/672b4feadffba5ab12eeee85 - OUT OF STOCK - Details: [object Object] {"timestamp":"2024-11-07T10:48:31.549Z"}
+[33merror[39m: DELETE /api/cart/66eb191721c88dbb0c26490b - CART NOT FOUND {"timestamp":"2024-11-07T10:50:14.318Z"}
+[33merror[39m: POST /api/cart/672ca16702ceb4403aaf7d8b/product/672b4feadffba5ab12eeee85 - OUT OF STOCK {"timestamp":"2024-11-07T11:19:27.062Z"}
+[33merror[39m: PUT /api/cart/672ca16702ceb4403aaf7d8b/product/672b7dd2cb56859478fb39c8 - OUT OF STOCK {"timestamp":"2024-11-07T11:22:37.071Z"}

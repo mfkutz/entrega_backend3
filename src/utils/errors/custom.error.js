@@ -11,7 +11,7 @@ export class CustomError {
   static newError({ message, statusCode }, customMessage = null, details = null) {
     const error = new Error(customMessage || message);
     error.statusCode = statusCode;
-    if (details) error.details = details; // Agrega los detalles al error
+    if (details) error.details = details;
     throw error;
   }
 }
