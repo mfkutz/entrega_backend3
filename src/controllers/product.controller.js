@@ -41,7 +41,7 @@ class ProductController {
         category,
       });
 
-      if (!product) return CustomError.newError(errors.notFound);
+      if (!product) return CustomError.newError(errors.notFound, "Product not found");
 
       res.status(200).json({ result: "Product updated successfully", message: product });
     } catch (error) {
@@ -62,7 +62,7 @@ class ProductController {
     const { id } = req.params;
     try {
       const product = await productService.getById(id);
-      if (!product) return CustomError.newError(errors.notFound);
+      if (!product) return CustomError.newError(errors.notFound, "Product not found");
       res.status(200).json({ result: "Product found", product });
     } catch (error) {
       next(error);
@@ -73,7 +73,7 @@ class ProductController {
     const { id } = req.params;
     try {
       const product = await productService.delete(id);
-      if (!product) return CustomError.newError(errors.notFound);
+      if (!product) return CustomError.newError(errors.notFound, "Product not found");
       res.status(200).json({ result: "Product deleted successfully", message: product });
     } catch (error) {
       next(error);
@@ -88,7 +88,8 @@ class ProductController {
       //Validation of page number
       if (page) {
         const pageNumber = parseInt(page);
-        if (isNaN(pageNumber) || pageNumber <= 0) return CustomError.newError(errors.badRequest); //Invalid page number - TODO personalized message
+        if (isNaN(pageNumber) || pageNumber <= 0)
+          return CustomError.newError(errors.badRequest, "Invalid page number");
       }
 
       let options = {
@@ -114,7 +115,8 @@ class ProductController {
 
       const products = await productService.paginate(queries, options);
 
-      if (parseInt(page) > products.totalPages) return CustomError.newError(errors.badRequest); //Invalid page number - TODO personalized message
+      if (parseInt(page) > products.totalPages)
+        return CustomError.newError(errors.badRequest, "Invalid page number");
 
       const baseUrl = req.protocol + "://" + req.get("host") + req.originalUrl;
       const prevLink = products.hasPrevPage

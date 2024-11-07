@@ -29,7 +29,7 @@ class CartController {
     const { cid } = req.params;
     try {
       const cart = await cartService.getById(cid);
-      if (!cart) return CustomError.newError(errors.notFound); //Cart not found
+      if (!cart) return CustomError.newError(errors.notFound, "Cart not found");
       res.status(200).json({ response: "success", cart });
     } catch (error) {
       next(error);
@@ -40,27 +40,20 @@ class CartController {
     const { cid, pid } = req.params;
     const { quantity } = req.body;
     try {
-      if (!Number.isFinite(quantity)) return CustomError.newError(errors.badRequest); //400 - Quantity must be a number
+      if (!Number.isFinite(quantity))
+        return CustomError.newError(errors.badRequest, "Quantity must be a number");
 
       const cart = await cartService.getById(cid);
-      if (!cart) return res.status(404).json({ response: "Error", message: "Cart not found" }); //404 - Cart not found
+      if (!cart) return CustomError.newError(errors.notFound, "Cart not found");
 
       const product = await productService.getById(pid);
-      if (!product)
-        return res.status(404).json({ response: "Error", message: "Product not found" }); //404 - Product not found
+      if (!product) return CustomError.newError(errors.notFound, "Product not found");
 
       //Stock control
-      if (quantity > product.stock)
-        return res.status(409).json({
-          response: "Error",
-          message: "Out of stock", //409 - Out of stock
-          in_stock: product.stock,
-        });
+      if (quantity > product.stock) return CustomError.newError(errors.conflict, "Out of Stock");
 
       if (quantity < 1)
-        return res
-          .status(400)
-          .json({ response: "Error", message: "Quantity cannot be less than 1" }); //400 - Quantity cannot be less than 1
+        return CustomError.newError(errors.badRequest, "Quantity cannot be less than 1");
 
       const existingProductIndex = cart.products.findIndex(
         (prod) => prod.product._id.toString() === pid.toString()
@@ -70,7 +63,7 @@ class CartController {
         if (cart.products[existingProductIndex].quantity + quantity > product.stock)
           return res.status(409).json({
             response: "Error",
-            message: "Out of stock", //409 - Out of stock
+            message: "Out of stock", //409 - Out of stock - TO DO  Personalized message
             in_stock: product.stock,
             you_have_in_cart: cart.products[existingProductIndex].quantity,
           });
@@ -86,15 +79,14 @@ class CartController {
     }
   }
 
-  async deleteProductFromCart(req, res) {
+  async deleteProductFromCart(req, res, next) {
     const { cid, pid } = req.params;
     try {
       const cart = await cartService.getById(cid);
-      if (!cart) return res.status(404).json({ response: "Error", message: "Cart not found" });
+      if (!cart) return CustomError.newError(errors.notFound, "Cart not found");
 
       const product = await productService.getById(pid);
-      if (!product)
-        return res.status(404).json({ response: "Error", message: "Product not found" });
+      if (!product) return CustomError.newError(errors.notFound, "Product not found");
 
       const existingProductIndex = cart.products.findIndex(
         (prod) => prod.product._id.toString() === pid.toString()
@@ -103,25 +95,24 @@ class CartController {
       if (existingProductIndex !== -1) {
         cart.products.splice(existingProductIndex, 1);
       } else {
-        return res.status(404).send({ result: "Error", message: "Product not found in cart" });
+        return CustomError.newError(errors.notFound, "Product not found in cart");
       }
       await cart.save();
       res.status(200).json({ result: "Success", message: "Product deleted from cart" });
     } catch (error) {
-      res.status(500).json({ response: "Error", message: error.message });
+      next(error);
     }
   }
 
-  async updateCart(req, res) {
+  async updateCart(req, res, next) {
     const { cid } = req.params;
-    // const products = req.body.products;
     const { products } = req.body;
 
     try {
       const cart = await cartService.getById(cid);
-      if (!cart) return res.status(404).json({ response: "Error", message: "Cart not found" });
+      if (!cart) return CustomError.newError(errors.notFound, "Cart not found");
       if (!Array.isArray(products))
-        return res.status(400).json({ response: "Error", message: "Products must be an array" });
+        return CustomError.newError(errors.badRequest, "Products must be an array");
 
       for (const item of products) {
         const productId = item.product;
@@ -129,10 +120,7 @@ class CartController {
 
         const product = await productService.getById(productId);
 
-        if (!product)
-          return res
-            .status(404)
-            .json({ response: "Error", message: `Product ${productId} not found` });
+        if (!product) return CustomError.newError(errors.notFound, "Product not found");
 
         //Update cart with products and quantity
         const existingProductIndex = cart.products.findIndex(
@@ -150,31 +138,25 @@ class CartController {
       await cart.save();
       res.status(200).json({ result: "Success", message: "Cart updated successfully" });
     } catch (error) {
-      res.status(500).json({ response: "Error", message: error.message });
+      next(error);
     }
   }
 
-  async updateQuantity(req, res) {
+  async updateQuantity(req, res, next) {
     const { cid, pid } = req.params;
     const { quantity } = req.body;
     try {
       const cart = await cartService.getById(cid);
-      if (!cart) return res.status(404).json({ response: "Error", message: "Cart not found" });
+      if (!cart) return CustomError.newError(errors.notFound, "Cart not found");
 
       const product = await productService.getById(pid);
-      if (!product)
-        return res.status(404).json({ response: "Error", message: "Product not found" });
+      if (!product) return CustomError.newError(errors.notFound, "Product not found");
 
       //Stock control
-      if (quantity > product.stock)
-        return res
-          .status(404)
-          .json({ response: "Error", message: "out of stock", in_stock: product.stock });
+      if (quantity > product.stock) return CustomError.newError(errors.notFound, "Out of stock");
 
       if (quantity < 1)
-        return res
-          .status(404)
-          .json({ response: "Error", message: "Quantity cannot be less than 1" });
+        return CustomError.newError(errors.conflict, "Quantity cannot be less than 1");
 
       const existingProductIndex = cart.products.findIndex(
         (prod) => prod.product._id.toString() === pid.toString()
@@ -183,47 +165,47 @@ class CartController {
       if (existingProductIndex !== -1) {
         cart.products[existingProductIndex].quantity = quantity;
       } else {
-        return res.status(404).json({ response: "Error", message: "Product not found in cart" });
+        return CustomError.newError(errors.notFound, "Product not found in cart");
       }
 
       await cart.save();
       res.status(200).json({ result: "Success", message: "Product quantity updated successfully" });
     } catch (error) {
-      res.status(500).json({ response: "Error", message: error.message });
+      next(error);
     }
   }
 
-  async emptyCart(req, res) {
+  async emptyCart(req, res, next) {
     const { cid } = req.params;
     try {
       const cart = await cartService.getById(cid);
-      if (!cart) return res.status(404).json({ response: "Error", message: "Cart not found" });
+      if (!cart) return CustomError.newError(errors.notFound, "Cart not found");
       cart.products = [];
       await cart.save();
       res.status(200).json({ result: "Success", message: "Cart emptied successfully" });
     } catch (error) {
-      res.status(500).json({ response: "Error", message: error.message });
+      next(error);
     }
   }
 
-  async deleteAllCarts(req, res) {
+  async deleteAllCarts(req, res, next) {
     try {
       await cartService.delete();
       res.status(200).json({ result: "Success", message: "All carts deleted successfully" });
     } catch (error) {
-      res.status(500).json({ response: "Error", message: error.message });
+      next(error);
     }
   }
 
-  async purchase(req, res) {
+  async purchase(req, res, next) {
     const { cid } = req.params;
 
     try {
       const cart = await cartService.getById(cid);
-      if (!cart) return res.status(404).json({ response: "Error", message: "Cart not found" });
+      if (!cart) return CustomError.newError(errors.notFound, "Cart not found");
 
       if (cart.products.length === 0)
-        return res.status(400).json({ response: "Error", message: "Cart is empty" });
+        return CustomError.newError(errors.badRequest, "Cart is empty");
 
       const productsWithoutStock = [];
 
@@ -238,12 +220,15 @@ class CartController {
         }
       });
 
-      if (productsWithoutStock.length > 0) {
+      /* if (productsWithoutStock.length > 0) {
         return res.status(400).json({
-          error: "Insufficient stock",
+          error: "Insufficient stock", // 400 - Insuficient stock - TODO
           details: productsWithoutStock,
         });
-      }
+      } */
+
+      if (productsWithoutStock.length > 0)
+        return CustomError.newError(errors.badRequest, "Insuficient stock", productsWithoutStock); // 400 - Insuficient stock - TODO
 
       const promises = cart.products.map((p) =>
         productService.discountStock(p.product._id, p.quantity)
@@ -286,7 +271,7 @@ class CartController {
 
       res.status(200).json({ message: "Buy success", ticket });
     } catch (error) {
-      res.status(500).json({ response: "Error", message: error.message });
+      next(error);
     }
   }
 }

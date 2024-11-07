@@ -47,3 +47,15 @@
 [31mfatal[39m: GET /api/product/limit?=2 - CAST TO OBJECTID FAILED FOR VALUE "LIMIT" (TYPE STRING) AT PATH "_ID" FOR MODEL "PRODUCTS" {"timestamp":"2024-11-06T16:33:33.010Z"}
 [33merror[39m: GET /api/product?limit=10&page=200 - BAD REQUEST {"timestamp":"2024-11-06T16:37:57.221Z"}
 [33merror[39m: GET /api/product?limit=10&page=200 - BAD REQUEST {"timestamp":"2024-11-06T16:38:01.161Z"}
+[33merror[39m: GET /api/cart/66eb191721c88dbb0c26490b - RESOURCE NOT FOUND - Details: Cart not found {"timestamp":"2024-11-06T21:25:52.683Z"}
+[33merror[39m: POST /api/cart/66eb191721c88dbb0c26490b/product/66e993d0756f03dffc084d29 - RESOURCE NOT FOUND {"timestamp":"2024-11-06T21:29:23.170Z"}
+[33merror[39m: POST /api/cart/66eb191721c88dbb0c26490b/product/66e993d0756f03dffc084d29 - RESOURCE NOT FOUND {"timestamp":"2024-11-06T21:30:08.611Z"}
+[33merror[39m: POST /api/cart/66eb191721c88dbb0c26490b/product/66e993d0756f03dffc084d29 - RESOURCE NOT FOUND - Details: Cart not found {"timestamp":"2024-11-06T21:30:26.991Z"}
+[33merror[39m: POST /api/cart/66eb191721c88dbb0c26490b/product/66e993d0756f03dffc084d29 - BAD REQUEST - Details: Quantity must be a number {"timestamp":"2024-11-06T21:31:48.690Z"}
+[33merror[39m: GET /api/user/67295348e5e91c628eccfc8c - RESOURCE NOT FOUND - Details: User not found {"timestamp":"2024-11-07T00:38:01.240Z"}
+[33merror[39m: GET /api/user/67295348e5e91c628eccfc8c - USER NOT FOUND {"timestamp":"2024-11-07T00:48:51.498Z"}
+[33merror[39m: GET /api/user/67295348e5e91c628eccfc8c - RESOURCE NOT FOUND {"timestamp":"2024-11-07T00:49:30.279Z"}
+[33merror[39m: GET /api/user/67295348e5e91c628eccfc8c - USER NOT FOUND {"timestamp":"2024-11-07T00:49:45.803Z"}
+[33merror[39m: POST /api/cart/672b7dbacb56859478fb39c2/product/672b4feadffba5ab12eeee85 - QUANTITY MUST BE A NUMBER {"timestamp":"2024-11-07T00:53:53.532Z"}
+[33merror[39m: POST /api/cart/66eb191721c88dbb0c26490b/purchase - CART NOT FOUND {"timestamp":"2024-11-07T01:55:59.764Z"}
+[33merror[39m: POST /api/cart/672b7dbacb56859478fb39c2/purchase - INSUFICIENT STOCK - Details: [object Object] {"timestamp":"2024-11-07T01:58:26.420Z"}
