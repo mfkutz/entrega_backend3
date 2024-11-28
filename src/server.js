@@ -9,6 +9,9 @@ import routes from "./routes/index.js";
 import errorHandler from "./middlewares/errorHandler.js";
 import winstonLogger from "./utils/winston.util.js";
 import loggerWinston from "./middlewares/winston.logger.mid.js";
+import swaggerOptions from "./utils/swagger.js";
+import swaggerJSDoc from "swagger-jsdoc";
+import { serve, setup } from "swagger-ui-express";
 
 const app = express();
 const PORT = config.PORT;
@@ -27,6 +30,10 @@ app.use(loggerWinston);
 //Passport config
 initializePassport();
 app.use(passport.initialize());
+
+//Documentation Swagger
+const specs = swaggerJSDoc(swaggerOptions);
+app.use("/api/docs", serve, setup(specs));
 
 //Routes
 app.use("/api", routes);

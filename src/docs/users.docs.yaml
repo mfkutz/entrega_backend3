@@ -1,0 +1,70 @@
+paths:
+  /api/user/:
+    get:
+      summary: Obtiene todos los usuarios registrados
+      tags:
+        - Users
+      responses:
+        "200":
+          description: Usuarios obtenidos correctamente.
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Users"
+        "500":
+          description: "Internal server error"
+
+components:
+  schemas:
+    Users:
+      type: object
+      properties:
+        _id:
+          type: objectId
+          description: ID autogenerado por mongoDb
+        first_name:
+          type: string
+          description: The user's first name.
+        last_name:
+          type: string
+          description: The user's last name..
+        email:
+          type: string
+          description: The user's email address. Must be unique.
+        age:
+          type: integer
+          description: The user's age.
+        password:
+          type: string
+          description: The user's password. Stored securely.
+        rol:
+          type: string
+          enum:
+            - "admin"
+            - "user"
+          description: "The user's role within the application."
+          default: user
+        cart:
+          type: array
+          description: Reference to the user's shopping cart (ObjectId of the cart document).
+        createdAt:
+          type: string
+          format: date-time
+          description: "The date and time when the user was created"
+        updatedAt:
+          type: string
+          format: date-time
+          description: "The date and time when the user was last updated"
+      example:
+        _id: ObjectId('672ca16702ceb4403aaf7d8a')
+        first_name: Martin
+        last_name: Kutzner
+        email: admin@gmail.com
+        age: 24
+        password: $2b$10$18nU70I6FvKVBF9c/d2CeuBo8af6V6Ozzf19RB.NvuW0vW.SYiIzS
+        rol: admin
+        cart: objectId('672ca16702ceb4403aaf7d8b')
+        createdAt: 2024-11-07T11:15:51.224+00:00
+        updatedAt: 2025-3-07T15:15:51.224+00:00
