@@ -689,3 +689,258 @@
 [34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-08T13:12:51.050Z"}
 [34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-08T13:16:02.096Z"}
 [34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-08T13:16:02.117Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-28T15:34:44.412Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-28T15:34:44.435Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-28T15:36:32.849Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-28T15:36:32.886Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-28T15:37:04.281Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-28T15:37:04.304Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-28T15:37:17.052Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-28T15:37:17.074Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-28T15:38:20.447Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-28T15:38:20.480Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [34m[1m[[ development ]][22m[39m  {"timestamp":"2024-11-28T15:42:44.878Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-28T15:42:44.904Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-28T15:43:55.755Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-28T15:43:55.777Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-28T15:44:16.946Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-28T15:44:16.969Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-28T15:55:50.607Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-28T15:55:50.627Z"}
+[33merror[39m: GET /api/user/673c733d1b6e15f03b6f8ac2 - USER NOT FOUND {"timestamp":"2024-11-28T15:56:41.363Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-28T15:58:23.540Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-28T15:58:23.560Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-28T15:59:16.947Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-28T15:59:16.990Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-28T15:59:55.630Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-28T15:59:55.652Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-28T16:02:57.560Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-28T16:02:57.588Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-28T16:09:23.791Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-28T16:09:23.820Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-28T16:16:21.386Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-28T16:16:21.408Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-28T16:21:27.205Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-28T16:21:27.234Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-28T16:22:47.612Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-28T16:22:47.631Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-28T16:24:53.724Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-28T16:24:53.747Z"}
+[33merror[39m: GET /api/product?limit=10&page=200 - INVALID PAGE NUMBER {"timestamp":"2024-11-28T16:30:32.587Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-28T16:32:15.007Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-28T16:32:15.028Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-28T16:46:51.665Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-28T16:46:51.684Z"}
+[31mfatal[39m: GET /api/product/paginate - CAST TO OBJECTID FAILED FOR VALUE "PAGINATE" (TYPE STRING) AT PATH "_ID" FOR MODEL "PRODUCTS" {"timestamp":"2024-11-28T16:47:55.911Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-28T16:48:33.925Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-28T16:48:33.949Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-28T16:49:12.508Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-28T16:49:12.533Z"}
+[33merror[39m: GET /api/product/?limit=20&page=2 - INVALID PAGE NUMBER {"timestamp":"2024-11-28T16:49:50.257Z"}
+[33merror[39m: GET /api/product/?page=2 - INVALID PAGE NUMBER {"timestamp":"2024-11-28T16:50:29.203Z"}
+[33merror[39m: GET /api/product?limit=10&page=200 - INVALID PAGE NUMBER {"timestamp":"2024-11-28T16:51:00.494Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-28T16:52:45.067Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-28T16:52:45.091Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-28T16:52:58.966Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-28T16:52:58.989Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-28T16:54:01.954Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-28T16:54:01.975Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-28T16:54:54.771Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-28T16:54:54.806Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-28T16:55:02.821Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-28T16:55:02.844Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-28T16:55:08.212Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-28T16:55:08.234Z"}
+[31mfatal[39m: GET /api/product/paginate/ - CAST TO OBJECTID FAILED FOR VALUE "PAGINATE" (TYPE STRING) AT PATH "_ID" FOR MODEL "PRODUCTS" {"timestamp":"2024-11-28T16:55:15.320Z"}
+[31mfatal[39m: GET /api/product/paginate/ - CAST TO OBJECTID FAILED FOR VALUE "PAGINATE" (TYPE STRING) AT PATH "_ID" FOR MODEL "PRODUCTS" {"timestamp":"2024-11-28T16:56:01.225Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-28T16:56:52.259Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-28T16:56:52.324Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-28T16:56:54.959Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-28T16:56:54.981Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-28T16:57:14.446Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-28T16:57:14.475Z"}
+[31mfatal[39m: GET /api/product/s - CAST TO OBJECTID FAILED FOR VALUE "S" (TYPE STRING) AT PATH "_ID" FOR MODEL "PRODUCTS" {"timestamp":"2024-11-28T16:57:16.917Z"}
+[31mfatal[39m: GET /api/product/s - CAST TO OBJECTID FAILED FOR VALUE "S" (TYPE STRING) AT PATH "_ID" FOR MODEL "PRODUCTS" {"timestamp":"2024-11-28T16:57:19.912Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-28T16:57:39.574Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-28T16:57:39.598Z"}
+[31mfatal[39m: GET /api/product/s - CAST TO OBJECTID FAILED FOR VALUE "S" (TYPE STRING) AT PATH "_ID" FOR MODEL "PRODUCTS" {"timestamp":"2024-11-28T16:57:41.036Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-28T16:57:58.417Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-28T16:57:58.436Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-28T16:58:16.193Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-28T16:58:16.215Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-28T16:58:54.878Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-28T16:58:54.906Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T12:42:59.692Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T12:42:59.740Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T13:30:24.227Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T13:30:24.266Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T13:47:40.356Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T13:47:40.377Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T13:52:48.485Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T13:52:48.515Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T13:55:29.114Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T13:55:29.137Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T14:15:31.319Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T14:15:31.350Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T14:18:52.149Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T14:18:52.176Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T14:20:39.773Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T14:20:39.802Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T14:24:49.922Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T14:24:49.958Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T14:26:20.459Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T14:26:20.493Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T14:27:19.488Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T14:27:19.521Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T14:28:47.148Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T14:28:47.177Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T14:31:21.674Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T14:31:21.694Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T15:36:24.325Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T15:36:24.372Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T15:41:39.994Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T15:41:40.024Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T15:45:16.335Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T15:45:16.359Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T15:47:18.787Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T15:47:18.816Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T16:17:59.188Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T16:17:59.211Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T16:19:14.750Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T16:19:14.785Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T16:19:48.384Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T16:19:48.407Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T16:37:53.621Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T16:37:53.653Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T16:39:23.188Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T16:39:23.209Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T17:33:43.008Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T17:33:43.035Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T17:34:23.297Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T17:34:23.331Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T17:36:45.043Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T17:36:45.069Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T17:36:52.268Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T17:36:52.288Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T17:37:15.278Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T17:37:15.307Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T17:37:28.980Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T17:37:29.024Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T17:37:55.921Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T17:37:55.947Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T17:50:14.879Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T17:50:14.902Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T17:51:37.435Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T17:51:37.455Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T17:52:44.886Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T17:52:44.905Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T17:54:03.532Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T17:54:03.559Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T17:54:55.521Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T17:54:55.541Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T17:55:04.422Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T17:55:04.444Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T17:57:14.521Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T17:57:14.543Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T17:59:31.981Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T17:59:32.012Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T17:59:45.915Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T17:59:45.936Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T18:00:01.636Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T18:00:01.668Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T18:00:06.653Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T18:00:06.674Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T18:00:15.318Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T18:00:15.348Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T18:02:23.378Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T18:02:23.407Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T18:02:40.133Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T18:02:40.153Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T18:02:56.269Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T18:02:56.289Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T18:05:30.177Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T18:05:30.205Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T18:06:16.651Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T18:06:16.694Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T18:06:36.816Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T18:06:36.871Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T18:06:43.962Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T18:06:43.985Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T18:06:48.942Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T18:06:48.981Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T18:07:07.289Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T18:07:07.310Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T18:07:33.221Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T18:07:33.254Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T18:07:48.652Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T18:07:48.785Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T18:08:44.617Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T18:08:44.652Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T18:10:09.650Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T18:10:09.685Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T18:11:01.804Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T18:11:01.825Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T18:11:19.261Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T18:11:19.291Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T18:11:29.985Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T18:11:30.013Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T18:11:41.950Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T18:11:41.973Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T18:11:55.018Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T18:11:55.041Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T18:12:09.337Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T18:12:09.462Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T18:12:23.385Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T18:12:23.406Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T18:12:40.120Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T18:12:40.141Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T18:13:08.228Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T18:13:08.253Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T18:13:53.863Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T18:13:53.885Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T18:14:37.217Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T18:14:37.238Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T18:14:55.337Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T18:14:55.458Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T18:14:58.225Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T18:14:58.247Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T18:15:09.328Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T18:15:09.351Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T18:15:58.528Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T18:15:58.561Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T18:16:53.476Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T18:16:53.504Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T18:17:17.340Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T18:17:17.590Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T18:19:07.838Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T18:19:07.869Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T18:19:26.953Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T18:19:26.987Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T18:19:39.781Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T18:19:39.803Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T18:19:47.897Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T18:19:47.918Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T18:19:59.677Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T18:19:59.704Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T18:20:10.440Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T18:20:10.495Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T18:20:35.687Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T18:20:35.732Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T18:20:50.312Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T18:20:50.340Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T18:22:02.411Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T18:22:02.464Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T18:22:43.719Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T18:22:43.756Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T18:22:54.438Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T18:22:54.512Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T18:22:56.818Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T18:22:56.847Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T18:23:10.580Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T18:23:10.616Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T18:23:19.402Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T18:23:19.425Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T18:23:29.567Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T18:23:29.594Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-11-29T18:23:35.990Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-11-29T18:23:36.017Z"}

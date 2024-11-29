@@ -7,13 +7,7 @@ import { productDto, updateProductDto } from "../dto/product.dto.js";
 
 const router = Router();
 
-router.post(
-  "/",
-  passportCall("jwt"),
-  autorization(["admin"]),
-  validate(productDto),
-  productController.addProduct
-);
+router.post("/", passportCall("jwt"), autorization(["admin"]), validate(productDto), productController.addProduct);
 router.put(
   "/:id",
   passportCall("jwt"),
@@ -22,12 +16,7 @@ router.put(
   productController.updateProduct
 );
 router.get("/:id", productController.getById);
-router.delete(
-  "/:id",
-  passportCall("jwt"),
-  autorization(["admin"]),
-  productController.deleteProduct
-);
+router.delete("/:id", passportCall("jwt"), autorization(["admin"]), productController.deleteProduct);
 router.get("/", productController.paginate);
 
 export default router;

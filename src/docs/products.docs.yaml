@@ -1,0 +1,180 @@
+paths:
+  /api/product/{id}:
+    get:
+      summary: Retrieve a product by ID.
+      tags:
+        - Products
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+            description: Unique ID of the product.
+      responses:
+        "200":
+          description: Product retrieved successfully.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Product"
+        "404":
+          description: Product not found.
+        "500":
+          description: Internal server error.
+
+    put:
+      summary: Update a product.
+      tags:
+        - Products
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+            description: Unique ID of the product.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Product"
+      responses:
+        "200":
+          description: Product updated successfully.
+        "400":
+          description: Invalid data.
+        "404":
+          description: Product not found.
+        "500":
+          description: Internal server error.
+      security:
+        - AdminAuth: []
+
+    delete:
+      summary: Delete a product.
+      tags:
+        - Products
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+            description: Unique ID of the product.
+      responses:
+        "200":
+          description: Product deleted successfully.
+        "404":
+          description: Product not found.
+        "500":
+          description: Internal server error.
+      security:
+        - AdminAuth: []
+
+  /api/product/:
+    get:
+      summary: Paginate products.
+      tags:
+        - Products
+      parameters:
+        - in: query
+          name: limit
+          schema:
+            type: integer
+            description: Number of products per page.
+        - in: query
+          name: page
+          schema:
+            type: integer
+            description: Current page number.
+        - in: query
+          name: sort
+          schema:
+            type: string
+            enum: [asc, desc]
+            description: Sort products by price (ascending or descending).
+        - in: query
+          name: category
+          schema:
+            type: string
+            description: Filter products by category.
+        - in: query
+          name: available
+          schema:
+            type: string
+            enum: [true, false]
+            description: Filter products by availability.
+      responses:
+        "200":
+          description: Products paginated successfully.
+        "400":
+          description: Invalid page number.
+        "500":
+          description: Internal server error.
+
+components:
+  securitySchemes:
+    AdminAuth:
+      type: apiKey
+      in: header
+      name: Authorization
+      description: JWT token must be provided for authentication and authorization as an admin.
+
+  schemas:
+    Product:
+      type: object
+      properties:
+        _id:
+          type: string
+          description: Unique ID of the product (ObjectId).
+        title:
+          type: string
+          description: The title of the product.
+        description:
+          type: string
+          description: A detailed description of the product.
+        price:
+          type: number
+          description: The price of the product.
+        thumbnail:
+          type: array
+          items:
+            type: string
+          description: List of image URLs for the product.
+        status:
+          type: boolean
+          description: Availability status of the product.
+          default: true
+        code:
+          type: string
+          description: Unique product code.
+        stock:
+          type: integer
+          description: Number of items in stock.
+        category:
+          type: string
+          description: The category of the product.
+        createdAt:
+          type: string
+          format: date-time
+          description: Product creation timestamp.
+        updatedAt:
+          type: string
+          format: date-time
+          description: Product last updated timestamp.
+      example:
+        _id: "63fe1b1c6a1b3e2a1c5e4f6e"
+        title: "Smartphone"
+        description: "Latest model with advanced technology."
+        price: 799.99
+        thumbnail:
+          - "https://example.com/image1.jpg"
+          - "https://example.com/image2.jpg"
+        status: true
+        code: "SMRT12345"
+        stock: 50
+        category: "Electronics"
+        createdAt: "2024-11-07T10:00:00.000Z"
+        updatedAt: "2024-11-08T10:00:00.000Z"

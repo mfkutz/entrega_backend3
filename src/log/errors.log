@@ -68,3 +68,14 @@
 [33merror[39m: DELETE /api/cart/66eb191721c88dbb0c26490b - CART NOT FOUND {"timestamp":"2024-11-07T10:50:14.318Z"}
 [33merror[39m: POST /api/cart/672ca16702ceb4403aaf7d8b/product/672b4feadffba5ab12eeee85 - OUT OF STOCK {"timestamp":"2024-11-07T11:19:27.062Z"}
 [33merror[39m: PUT /api/cart/672ca16702ceb4403aaf7d8b/product/672b7dd2cb56859478fb39c8 - OUT OF STOCK {"timestamp":"2024-11-07T11:22:37.071Z"}
+[33merror[39m: GET /api/user/673c733d1b6e15f03b6f8ac2 - USER NOT FOUND {"timestamp":"2024-11-28T15:56:41.363Z"}
+[33merror[39m: GET /api/product?limit=10&page=200 - INVALID PAGE NUMBER {"timestamp":"2024-11-28T16:30:32.587Z"}
+[31mfatal[39m: GET /api/product/paginate - CAST TO OBJECTID FAILED FOR VALUE "PAGINATE" (TYPE STRING) AT PATH "_ID" FOR MODEL "PRODUCTS" {"timestamp":"2024-11-28T16:47:55.911Z"}
+[33merror[39m: GET /api/product/?limit=20&page=2 - INVALID PAGE NUMBER {"timestamp":"2024-11-28T16:49:50.257Z"}
+[33merror[39m: GET /api/product/?page=2 - INVALID PAGE NUMBER {"timestamp":"2024-11-28T16:50:29.203Z"}
+[33merror[39m: GET /api/product?limit=10&page=200 - INVALID PAGE NUMBER {"timestamp":"2024-11-28T16:51:00.494Z"}
+[31mfatal[39m: GET /api/product/paginate/ - CAST TO OBJECTID FAILED FOR VALUE "PAGINATE" (TYPE STRING) AT PATH "_ID" FOR MODEL "PRODUCTS" {"timestamp":"2024-11-28T16:55:15.320Z"}
+[31mfatal[39m: GET /api/product/paginate/ - CAST TO OBJECTID FAILED FOR VALUE "PAGINATE" (TYPE STRING) AT PATH "_ID" FOR MODEL "PRODUCTS" {"timestamp":"2024-11-28T16:56:01.225Z"}
+[31mfatal[39m: GET /api/product/s - CAST TO OBJECTID FAILED FOR VALUE "S" (TYPE STRING) AT PATH "_ID" FOR MODEL "PRODUCTS" {"timestamp":"2024-11-28T16:57:16.917Z"}
+[31mfatal[39m: GET /api/product/s - CAST TO OBJECTID FAILED FOR VALUE "S" (TYPE STRING) AT PATH "_ID" FOR MODEL "PRODUCTS" {"timestamp":"2024-11-28T16:57:19.912Z"}
+[31mfatal[39m: GET /api/product/s - CAST TO OBJECTID FAILED FOR VALUE "S" (TYPE STRING) AT PATH "_ID" FOR MODEL "PRODUCTS" {"timestamp":"2024-11-28T16:57:41.036Z"}

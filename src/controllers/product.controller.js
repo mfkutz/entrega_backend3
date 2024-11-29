@@ -88,8 +88,7 @@ class ProductController {
       //Validation of page number
       if (page) {
         const pageNumber = parseInt(page);
-        if (isNaN(pageNumber) || pageNumber <= 0)
-          return CustomError.newError(errors.badRequest, "Invalid page number");
+        if (isNaN(pageNumber) || pageNumber <= 0) return CustomError.newError(errors.badRequest, "Invalid page number");
       }
 
       let options = {
@@ -115,8 +114,7 @@ class ProductController {
 
       const products = await productService.paginate(queries, options);
 
-      if (parseInt(page) > products.totalPages)
-        return CustomError.newError(errors.badRequest, "Invalid page number");
+      if (parseInt(page) > products.totalPages) return CustomError.newError(errors.badRequest, "Invalid page number");
 
       const baseUrl = req.protocol + "://" + req.get("host") + req.originalUrl;
       const prevLink = products.hasPrevPage

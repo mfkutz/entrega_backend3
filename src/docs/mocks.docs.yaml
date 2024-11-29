@@ -1,0 +1,139 @@
+paths:
+  /api/mocks/users/{n}:
+    get:
+      summary: Generate mock users.
+      tags:
+        - Mocks
+      description: Creates and stores `n` mock users in the database.
+      parameters:
+        - name: n
+          in: path
+          required: true
+          description: Number of users to generate.
+          schema:
+            type: integer
+            minimum: 1
+      responses:
+        201:
+          description: Users created successfully.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  response:
+                    type: string
+                    example: "Users created OK"
+                  message:
+                    type: string
+                    example: "Total users created: 10"
+        500:
+          description: Internal server error.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+                    example: "Internal Server Error"
+  /api/mocks/products/{n}:
+    get:
+      summary: Generate mock products.
+      tags:
+        - Mocks
+      description: Creates and stores `n` mock products in the database.
+      parameters:
+        - name: n
+          in: path
+          required: true
+          description: Number of products to generate.
+          schema:
+            type: integer
+            minimum: 1
+      responses:
+        200:
+          description: Products created successfully.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  response:
+                    type: string
+                    example: "Products created"
+                  message:
+                    type: string
+                    example: "Total products created: 10"
+        500:
+          description: Internal server error.
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error:
+                    type: string
+                    example: "Internal Server Error"
+
+components:
+  schemas:
+    User:
+      type: object
+      properties:
+        first_name:
+          type: string
+          description: User's first name.
+        last_name:
+          type: string
+          description: User's last name.
+        email:
+          type: string
+          format: email
+          description: User's email address.
+        age:
+          type: integer
+          description: User's age.
+        password:
+          type: string
+          description: Encrypted password.
+      required:
+        - first_name
+        - last_name
+        - email
+        - age
+        - password
+
+    Product:
+      type: object
+      properties:
+        title:
+          type: string
+          description: Product name.
+        description:
+          type: string
+          description: Product description.
+        price:
+          type: number
+          format: float
+          description: Product price.
+        thumbnail:
+          type: string
+          description: URL of the product image.
+        code:
+          type: string
+          description: Unique product code.
+        stock:
+          type: integer
+          description: Available product stock.
+        category:
+          type: string
+          description: Product category.
+      required:
+        - title
+        - description
+        - price
+        - thumbnail
+        - code
+        - stock
+        - category

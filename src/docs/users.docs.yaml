@@ -1,70 +1,172 @@
 paths:
   /api/user/:
     get:
-      summary: Obtiene todos los usuarios registrados
+      summary: Retrieve all registered users.
       tags:
         - Users
       responses:
         "200":
-          description: Usuarios obtenidos correctamente.
+          description: Successfully retrieved all users.
           content:
             application/json:
               schema:
                 type: array
                 items:
-                  $ref: "#/components/schemas/Users"
+                  $ref: "#/components/schemas/User"
         "500":
-          description: "Internal server error"
+          description: Internal server error.
+
+  /api/user/{id}:
+    get:
+      summary: Retrieve a user by their ID.
+      tags:
+        - Users
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+            description: Unique ID of the user.
+      responses:
+        "200":
+          description: Successfully retrieved the user.
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/User"
+        "404":
+          description: User not found.
+        "500":
+          description: Internal server error.
+
+    put:
+      summary: Update a user by their ID.
+      tags:
+        - Users
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+            description: Unique ID of the user.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                first_name:
+                  type: string
+                last_name:
+                  type: string
+                email:
+                  type: string
+                  format: email
+                age:
+                  type: integer
+                role:
+                  type: string
+                  enum:
+                    - admin
+                    - user
+              example:
+                first_name: John
+                last_name: Doe
+                email: john.doe@example.com
+                age: 30
+                role: user
+      security:
+        - AdminAuth: []
+      responses:
+        "200":
+          description: Successfully updated the user.
+        "404":
+          description: User not found.
+        "500":
+          description: Internal server error.
+
+    delete:
+      summary: Delete a user by their ID.
+      tags:
+        - Users
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+            description: Unique ID of the user.
+      security:
+        - AdminAuth: []
+      responses:
+        "200":
+          description: Successfully deleted the user.
+        "404":
+          description: User not found.
+        "500":
+          description: Internal server error.
 
 components:
+  securitySchemes:
+    AdminAuth:
+      type: apiKey
+      in: header
+      name: Authorization
+      description: JWT token must be provided for authentication and authorization as an admin.
+
   schemas:
-    Users:
+    User:
       type: object
       properties:
         _id:
-          type: objectId
-          description: ID autogenerado por mongoDb
+          type: string
+          description: Unique ID of the user (ObjectId).
         first_name:
           type: string
-          description: The user's first name.
+          description: User's first name.
         last_name:
           type: string
-          description: The user's last name..
+          description: User's last name.
         email:
           type: string
-          description: The user's email address. Must be unique.
+          description: User's unique email address.
+          format: email
         age:
           type: integer
-          description: The user's age.
+          description: User's age.
+          minimum: 0
         password:
           type: string
-          description: The user's password. Stored securely.
-        rol:
+          description: Encrypted password (bcrypt).
+        role:
           type: string
           enum:
-            - "admin"
-            - "user"
-          description: "The user's role within the application."
+            - admin
+            - user
+          description: Role of the user in the application.
           default: user
         cart:
-          type: array
-          description: Reference to the user's shopping cart (ObjectId of the cart document).
+          type: string
+          description: Cart ID associated with the user (ObjectId).
         createdAt:
           type: string
           format: date-time
-          description: "The date and time when the user was created"
+          description: Date and time when the user was created.
         updatedAt:
           type: string
           format: date-time
-          description: "The date and time when the user was last updated"
+          description: Date and time when the user was last updated.
       example:
-        _id: ObjectId('672ca16702ceb4403aaf7d8a')
+        _id: "672ca16702ceb4403aaf7d8a"
         first_name: Martin
         last_name: Kutzner
         email: admin@gmail.com
         age: 24
-        password: $2b$10$18nU70I6FvKVBF9c/d2CeuBo8af6V6Ozzf19RB.NvuW0vW.SYiIzS
-        rol: admin
-        cart: objectId('672ca16702ceb4403aaf7d8b')
-        createdAt: 2024-11-07T11:15:51.224+00:00
-        updatedAt: 2025-3-07T15:15:51.224+00:00
+        password: "$2b$10$18nU70I6FvKVBF9c/d2CeuBo8af6V6Ozzf19RB.NvuW0vW.SYiIzS"
+        role: admin
+        cart: "672ca16702ceb4403aaf7d8b"
+        createdAt: "2024-11-07T11:15:51.224+00:00"
+        updatedAt: "2025-03-07T15:15:51.224+00:00"

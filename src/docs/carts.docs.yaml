@@ -1,1 +1,463 @@
+paths:
+  /api/cart:
+    post:
+      summary: Create a new empty cart
+      tags:
+        - Cart
+      operationId: addCart
+      security:
+        - jwt: []
+      responses:
+        "200":
+          description: Cart created successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  result:
+                    type: string
+                    example: success
+                  cart:
+                    $ref: "#/components/schemas/Cart"
+        "400":
+          description: Bad request
+        "500":
+          description: Internal server error
 
+    get:
+      summary: Get all carts
+      tags:
+        - Cart
+      operationId: getAll
+      security:
+        - jwt: []
+      responses:
+        "200":
+          description: A list of all carts
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  result:
+                    type: string
+                    example: success
+                  carts:
+                    type: array
+                    items:
+                      $ref: "#/components/schemas/Cart"
+        "500":
+          description: Internal server error
+
+  /api/cart/{cid}:
+    get:
+      summary: Get a cart by ID
+      tags:
+        - Cart
+      operationId: getById
+      security:
+        - jwt: []
+      parameters:
+        - name: cid
+          in: path
+          required: true
+          description: Cart ID
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Cart found successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  response:
+                    type: string
+                    example: success
+                  cart:
+                    $ref: "#/components/schemas/Cart"
+        "404":
+          description: Cart not found
+        "500":
+          description: Internal server error
+
+    put:
+      summary: Update a cart
+      tags:
+        - Cart
+      operationId: updateCart
+      security:
+        - jwt: []
+      parameters:
+        - name: cid
+          in: path
+          required: true
+          description: Cart ID
+          schema:
+            type: string
+      requestBody:
+        description: Products to be updated in the cart
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                products:
+                  type: array
+                  items:
+                    $ref: "#/components/schemas/CartProduct"
+      responses:
+        "200":
+          description: Cart updated successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  result:
+                    type: string
+                    example: Success
+                  message:
+                    type: string
+                    example: Cart updated successfully
+        "400":
+          description: Invalid product list
+        "404":
+          description: Cart not found
+        "500":
+          description: Internal server error
+
+  /api/cart/{cid}/product/{pid}:
+    post:
+      summary: Add a product to a cart
+      tags:
+        - Cart
+      operationId: addProductToCart
+      security:
+        - jwt: []
+      parameters:
+        - name: cid
+          in: path
+          required: true
+          description: Cart ID
+          schema:
+            type: string
+        - name: pid
+          in: path
+          required: true
+          description: Product ID
+          schema:
+            type: string
+      requestBody:
+        description: Quantity of the product to be added
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                quantity:
+                  type: integer
+                  example: 2
+      responses:
+        "200":
+          description: Product added to cart
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  result:
+                    type: string
+                    example: Success
+                  message:
+                    type: string
+                    example: Product added to cart
+        "400":
+          description: Invalid quantity or bad request
+        "404":
+          description: Product or cart not found
+        "409":
+          description: Out of stock
+
+    delete:
+      summary: Delete a product from a cart
+      tags:
+        - Cart
+      operationId: deleteProductFromCart
+      security:
+        - jwt: []
+      parameters:
+        - name: cid
+          in: path
+          required: true
+          description: Cart ID
+          schema:
+            type: string
+        - name: pid
+          in: path
+          required: true
+          description: Product ID
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Product deleted from cart
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  result:
+                    type: string
+                    example: Success
+                  message:
+                    type: string
+                    example: Product deleted from cart
+        "404":
+          description: Product or cart not found
+        "500":
+          description: Internal server error
+
+  /api/cart/{cid}/product/{pid}/quantity:
+    put:
+      summary: Update product quantity in the cart
+      tags:
+        - Cart
+      operationId: updateQuantity
+      security:
+        - jwt: []
+      parameters:
+        - name: cid
+          in: path
+          required: true
+          description: Cart ID
+          schema:
+            type: string
+        - name: pid
+          in: path
+          required: true
+          description: Product ID
+          schema:
+            type: string
+      requestBody:
+        description: New quantity of the product
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                quantity:
+                  type: integer
+                  example: 5
+      responses:
+        "200":
+          description: Product quantity updated
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  result:
+                    type: string
+                    example: Success
+                  message:
+                    type: string
+                    example: Product quantity updated successfully
+        "400":
+          description: Invalid quantity
+        "404":
+          description: Product or cart not found
+        "409":
+          description: Out of stock
+
+  /api/cart/{cid}/purchase:
+    post:
+      summary: Purchase products in the cart
+      tags:
+        - Cart
+      operationId: purchase
+      security:
+        - jwt: []
+      parameters:
+        - name: cid
+          in: path
+          required: true
+          description: Cart ID
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Purchase successful
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  message:
+                    type: string
+                    example: Buy success
+                  ticket:
+                    $ref: "#/components/schemas/Ticket"
+        "400":
+          description: Cart is empty or insufficient stock
+        "404":
+          description: Cart not found
+        "500":
+          description: Internal server error
+
+  /api/cart/{cid}/empty:
+    delete:
+      summary: Empty a cart
+      tags:
+        - Cart
+      operationId: emptyCart
+      security:
+        - jwt: []
+      parameters:
+        - name: cid
+          in: path
+          required: true
+          description: Cart ID
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Cart emptied successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  result:
+                    type: string
+                    example: Success
+                  message:
+                    type: string
+                    example: Cart emptied successfully
+        "404":
+          description: Cart not found
+        "500":
+          description: Internal server error
+
+  /api/cart/all:
+    delete:
+      summary: Delete all carts (Admin only)
+      tags:
+        - Cart
+      operationId: deleteAllCarts
+      security:
+        - jwt: []
+      responses:
+        "200":
+          description: All carts deleted successfully
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  result:
+                    type: string
+                    example: Success
+                  message:
+                    type: string
+                    example: All carts deleted successfully
+        "403":
+          description: Forbidden (Admin only)
+        "500":
+          description: Internal server error
+
+components:
+  securitySchemes:
+    jwt:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+
+  components:
+  schemas:
+    Cart:
+      type: object
+      properties:
+        _id:
+          type: string
+          description: "Unique identifier for the cart"
+        products:
+          type: array
+          description: "List of products in the cart"
+          items:
+            $ref: "#/components/schemas/CartProduct"
+        createdAt:
+          type: string
+          format: date-time
+          description: "Timestamp when the cart was created"
+        updatedAt:
+          type: string
+          format: date-time
+          description: "Timestamp when the cart was last updated"
+      required:
+        - products
+
+    CartProduct:
+      type: object
+      properties:
+        product:
+          type: string
+          description: "ID of the product"
+        quantity:
+          type: integer
+          description: "Quantity of the product in the cart"
+      required:
+        - product
+        - quantity
+
+    Ticket:
+      type: object
+      properties:
+        _id:
+          type: string
+          description: "Unique identifier for the ticket"
+        code:
+          type: string
+          description: "Unique code for the ticket"
+        purchase_datatime:
+          type: string
+          format: date-time
+          description: "Purchase date and time"
+        amount:
+          type: number
+          format: float
+          description: "Total amount of the purchase"
+        purchaser:
+          type: string
+          description: "ID of the user who made the purchase"
+        products:
+          type: array
+          description: "List of purchased products"
+          items:
+            type: object
+            properties:
+              product:
+                type: string
+                description: "ID of the product"
+              quantity:
+                type: integer
+                description: "Quantity of the product"
+        createdAt:
+          type: string
+          format: date-time
+          description: "Timestamp when the ticket was created"
+        updatedAt:
+          type: string
+          format: date-time
+          description: "Timestamp when the ticket was last updated"
+      required:
+        - code
+        - purchase_datatime
+        - amount
+        - purchaser
+        - products

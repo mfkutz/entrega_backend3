@@ -9,7 +9,7 @@ import routes from "./routes/index.js";
 import errorHandler from "./middlewares/errorHandler.js";
 import winstonLogger from "./utils/winston.util.js";
 import loggerWinston from "./middlewares/winston.logger.mid.js";
-import swaggerOptions from "./utils/swagger.js";
+import swaggerOptions, { swaggerUiOptions } from "./utils/swagger.js";
 import swaggerJSDoc from "swagger-jsdoc";
 import { serve, setup } from "swagger-ui-express";
 
@@ -33,14 +33,12 @@ app.use(passport.initialize());
 
 //Documentation Swagger
 const specs = swaggerJSDoc(swaggerOptions);
-app.use("/api/docs", serve, setup(specs));
+app.use("/api/docs", serve, setup(specs, swaggerUiOptions));
 
 //Routes
 app.use("/api", routes);
 app.use((req, res) => {
-  res
-    .status(404)
-    .json({ error: "Route not found", message: "The route you are looking for does not exist" });
+  res.status(404).json({ error: "Route not found", message: "The route you are looking for does not exist" });
 });
 
 //Connect to DB
