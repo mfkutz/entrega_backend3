@@ -15,9 +15,9 @@ const swaggerOptions = {
 /* export const swaggerUiOptions = {
   customCss: `
     .topbar-wrapper .link {
-      content: url('https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png');
-      height: 40px;
-      width: 30px
+      content: url('/logo.png');
+      height: 30px; 
+      width: 30px;  
     }
   `,
 }; */

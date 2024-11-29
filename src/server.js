@@ -1,6 +1,7 @@
 import express from "express";
 import cookieParser from "cookie-parser";
 import passport from "passport";
+import { __dirname } from "./path.js";
 import { connectDB } from "./config/db.connect.js";
 import { config } from "./config/config.js";
 import compression from "express-compression";
@@ -13,12 +14,17 @@ import swaggerOptions, { swaggerUiOptions } from "./utils/swagger.js";
 import swaggerJSDoc from "swagger-jsdoc";
 import { serve, setup } from "swagger-ui-express";
 
+import path from "path";
+
 const app = express();
 const PORT = config.PORT;
+
+// const publicDir = path.join(__dirname, "..", "public");
 
 //Express config
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, "..", "public")));
 app.use(cookieParser(config.SIGN_COOKIE));
 app.use(
   compression({
