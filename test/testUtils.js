@@ -29,4 +29,4 @@ async function deleteUser() {
   await requester.delete(`/user/${userId}`).set("Authorization", `Bearer ${validJWT.value}`);
 }
 
-export { requester, registerAndLoginUser, deleteUser, validJWT };
+export { requester, registerAndLoginUser, deleteUser, validJWT, userId };
