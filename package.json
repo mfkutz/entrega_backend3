@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "nodemon src/server.js -m development",
     "testing": "nodemon src/server -m testing",
-    "start": "node src/server.js -m production"
+    "start": "node src/server.js -m production",
+    "test": "mocha 'test/**/*.test.js'"
   },
   "keywords": [],
   "author": "",
