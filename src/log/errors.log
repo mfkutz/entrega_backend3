@@ -101,3 +101,21 @@
 [31mfatal[39m: POST /api/product - USER NOT FOUND  {"timestamp":"2024-11-30T19:16:37.167Z"}
 [31mfatal[39m: POST /api/product - USER NOT FOUND  {"timestamp":"2024-11-30T19:17:25.747Z"}
 [31mfatal[39m: POST /api/product - USER NOT FOUND  {"timestamp":"2024-11-30T19:18:39.176Z"}
+[31mfatal[39m: POST /api/product - E11000 DUPLICATE KEY ERROR COLLECTION: FINAL-BACKEND3-DEVELOPMENT.PRODUCTS INDEX: CODE_1 DUP KEY: { CODE: "C012" } {"timestamp":"2024-12-01T15:02:16.530Z"}
+[33merror[39m: DELETE /api/product/672b4feadffba5ab12eeee83 - PRODUCT NOT FOUND {"timestamp":"2024-12-01T15:45:37.200Z"}
+[33merror[39m: GET /api/product/674c8587efb9470e612d71a9 - PRODUCT NOT FOUND {"timestamp":"2024-12-01T15:49:27.175Z"}
+[33merror[39m: DELETE /api/product/6749e9cfe4b1ef2b82da23fc - PRODUCT NOT FOUND {"timestamp":"2024-12-01T15:49:38.663Z"}
+[33merror[39m: GET /api/product/674c85b078d590dcd5e5066e - PRODUCT NOT FOUND {"timestamp":"2024-12-01T15:50:08.456Z"}
+[33merror[39m: GET /api/product/674c8b61b01ab3ccb08a5774 - PRODUCT NOT FOUND {"timestamp":"2024-12-01T16:14:25.146Z"}
+[33merror[39m: GET /api/product/674c8bd246ce3ec33899a96a - PRODUCT NOT FOUND {"timestamp":"2024-12-01T16:16:18.237Z"}
+[33merror[39m: GET /api/product/674c8c3079cb2c205928bc41 - PRODUCT NOT FOUND {"timestamp":"2024-12-01T16:17:52.257Z"}
+[33merror[39m: GET /api/product/674c8d0cacf292924f17d67c - PRODUCT NOT FOUND {"timestamp":"2024-12-01T16:21:32.108Z"}
+[33merror[39m: GET /api/product/674c8d278002327c79dee2bc - PRODUCT NOT FOUND {"timestamp":"2024-12-01T16:22:00.039Z"}
+[33merror[39m: GET /api/product/674c8dd93a70cb54212e774f - PRODUCT NOT FOUND {"timestamp":"2024-12-01T16:24:57.491Z"}
+[33merror[39m: GET /api/product/674c8dfbe10329b66ae3ac6c - PRODUCT NOT FOUND {"timestamp":"2024-12-01T16:25:31.428Z"}
+[33merror[39m: GET /api/product/674c8e4f9ffa27c2694cdd7f - PRODUCT NOT FOUND {"timestamp":"2024-12-01T16:26:55.825Z"}
+[33merror[39m: GET /api/product/674c8e6b81b0fcc279882c46 - PRODUCT NOT FOUND {"timestamp":"2024-12-01T16:27:23.871Z"}
+[33merror[39m: GET /api/product/674c8e93fe193f3e5a47da63 - PRODUCT NOT FOUND {"timestamp":"2024-12-01T16:28:03.255Z"}
+[33merror[39m: GET /api/product/674c8eaaf904a9471f08ac6c - PRODUCT NOT FOUND {"timestamp":"2024-12-01T16:28:26.264Z"}
+[33merror[39m: GET /api/product/674c8ee3bf1995721de7f63f - PRODUCT NOT FOUND {"timestamp":"2024-12-01T16:29:23.198Z"}
+[33merror[39m: GET /api/product/674c8f1c8da2ee8b5cd1d23d - PRODUCT NOT FOUND {"timestamp":"2024-12-01T16:30:20.149Z"}
