@@ -8,6 +8,16 @@ export let productToCreate = {
   category: "cat1",
 };
 
+export let productTest = {
+  title: "ProductTest",
+  description: "DescripcionTest",
+  price: 150,
+  thumbnail: "pictureTest.png",
+  code: "C012",
+  stock: 20,
+  category: "cat1",
+};
+
 export let userToCreate = {
   first_name: "user",
   last_name: "test",

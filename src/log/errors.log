@@ -225,3 +225,164 @@
 [33merror[39m: GET /api/product/674cb82f61c9dfa6497f395a - PRODUCT NOT FOUND {"timestamp":"2024-12-01T19:25:35.646Z"}
 [33merror[39m: GET /api/product/674cb8908519b21e86e90a94 - PRODUCT NOT FOUND {"timestamp":"2024-12-01T19:27:12.859Z"}
 [33merror[39m: GET /api/product/674cb8e7f1f777d0a3f78ab9 - PRODUCT NOT FOUND {"timestamp":"2024-12-01T19:28:39.959Z"}
+[33merror[39m: GET /api/product/674cb928855e72728e16d4f9 - PRODUCT NOT FOUND {"timestamp":"2024-12-01T19:29:44.742Z"}
+[33merror[39m: GET /api/product/674cb9d8855e72728e16d51b - PRODUCT NOT FOUND {"timestamp":"2024-12-01T19:32:40.433Z"}
+[33merror[39m: GET /api/product/674cbb7d855e72728e16d53d - PRODUCT NOT FOUND {"timestamp":"2024-12-01T19:39:41.414Z"}
+[33merror[39m: GET /api/product/674da077b34aa7038df35cc4 - PRODUCT NOT FOUND {"timestamp":"2024-12-02T11:56:39.209Z"}
+[33merror[39m: GET /api/product/674db7bfbcf4fe1cbd51395d - PRODUCT NOT FOUND {"timestamp":"2024-12-02T13:35:59.444Z"}
+[33merror[39m: GET /api/product/674db7e2ea2e113faff47c2e - PRODUCT NOT FOUND {"timestamp":"2024-12-02T13:36:34.872Z"}
+[33merror[39m: GET /api/product/674db7f9ea2e113faff47c51 - PRODUCT NOT FOUND {"timestamp":"2024-12-02T13:36:57.459Z"}
+[33merror[39m: GET /api/product/674db861c380bd60b6938ac8 - PRODUCT NOT FOUND {"timestamp":"2024-12-02T13:38:41.175Z"}
+[33merror[39m: GET /api/product/674db8aa574e2abfb13edec6 - PRODUCT NOT FOUND {"timestamp":"2024-12-02T13:39:54.903Z"}
+[33merror[39m: GET /api/user/674db8c2d2840642e7f56f5e - USER NOT FOUND {"timestamp":"2024-12-02T13:40:18.368Z"}
+[33merror[39m: GET /api/product/674db8c2d2840642e7f56f71 - PRODUCT NOT FOUND {"timestamp":"2024-12-02T13:40:18.661Z"}
+[33merror[39m: GET /api/user/674dc40e1367e890cb9c8bac - USER NOT FOUND {"timestamp":"2024-12-02T14:28:30.531Z"}
+[33merror[39m: GET /api/product/674dc40e1367e890cb9c8bbf - PRODUCT NOT FOUND {"timestamp":"2024-12-02T14:28:30.797Z"}
+[33merror[39m: GET /api/user/674dc425dd1e76dbe6861ca2 - USER NOT FOUND {"timestamp":"2024-12-02T14:28:53.670Z"}
+[33merror[39m: GET /api/product/674dc425dd1e76dbe6861cb6 - PRODUCT NOT FOUND {"timestamp":"2024-12-02T14:28:53.924Z"}
+[33merror[39m: GET /api/user/674dc471c81edc072fd0edc0 - USER NOT FOUND {"timestamp":"2024-12-02T14:30:09.361Z"}
+[33merror[39m: GET /api/product/674dc471c81edc072fd0edd4 - PRODUCT NOT FOUND {"timestamp":"2024-12-02T14:30:09.663Z"}
+[33merror[39m: GET /api/user/674dc58eedcc5cb44212e770 - USER NOT FOUND {"timestamp":"2024-12-02T14:34:54.567Z"}
+[33merror[39m: GET /api/product/674dc58eedcc5cb44212e784 - PRODUCT NOT FOUND {"timestamp":"2024-12-02T14:34:54.839Z"}
+[33merror[39m: GET /api/user/674dc75889401f8ff916aebe - USER NOT FOUND {"timestamp":"2024-12-02T14:42:32.676Z"}
+[33merror[39m: GET /api/product/674dc75889401f8ff916aed2 - PRODUCT NOT FOUND {"timestamp":"2024-12-02T14:42:32.950Z"}
+[33merror[39m: GET /api/user/674dcbd76abb7cdf21e024d3 - USER NOT FOUND {"timestamp":"2024-12-02T15:01:43.185Z"}
+[33merror[39m: GET /api/product/674dcbd76abb7cdf21e024f4 - PRODUCT NOT FOUND {"timestamp":"2024-12-02T15:01:43.642Z"}
+[33merror[39m: GET /api/user/674dcc366abb7cdf21e0250e - USER NOT FOUND {"timestamp":"2024-12-02T15:03:18.178Z"}
+[33merror[39m: GET /api/product/674dcc366abb7cdf21e0252f - PRODUCT NOT FOUND {"timestamp":"2024-12-02T15:03:18.636Z"}
+[33merror[39m: GET /api/user/674dcd819a32a0d931e0748c - USER NOT FOUND {"timestamp":"2024-12-02T15:08:49.727Z"}
+[33merror[39m: GET /api/product/674dcd829a32a0d931e074af - PRODUCT NOT FOUND {"timestamp":"2024-12-02T15:08:50.225Z"}
+[33merror[39m: GET /api/user/674dce2d3afa2da424fcf240 - USER NOT FOUND {"timestamp":"2024-12-02T15:11:42.203Z"}
+[33merror[39m: GET /api/product/674dce2e3afa2da424fcf263 - PRODUCT NOT FOUND {"timestamp":"2024-12-02T15:11:42.761Z"}
+[33merror[39m: GET /api/user/674dcf1294cd0c0c7815eb08 - USER NOT FOUND {"timestamp":"2024-12-02T15:15:30.525Z"}
+[33merror[39m: GET /api/product/674dcf1394cd0c0c7815eb2b - PRODUCT NOT FOUND {"timestamp":"2024-12-02T15:15:31.144Z"}
+[33merror[39m: GET /api/user/674dd0fa1335debd7e7bf870 - USER NOT FOUND {"timestamp":"2024-12-02T15:23:38.880Z"}
+[31mfatal[39m: GET /api/cart/undefined - CAST TO OBJECTID FAILED FOR VALUE "UNDEFINED" (TYPE STRING) AT PATH "_ID" FOR MODEL "CART" {"timestamp":"2024-12-02T15:23:39.167Z"}
+[33merror[39m: GET /api/product/674dd0fb1335debd7e7bf894 - PRODUCT NOT FOUND {"timestamp":"2024-12-02T15:23:39.426Z"}
+[33merror[39m: GET /api/user/674dd122e46bf49c4746e1b7 - USER NOT FOUND {"timestamp":"2024-12-02T15:24:18.400Z"}
+[33merror[39m: GET /api/product/674dd122e46bf49c4746e1dc - PRODUCT NOT FOUND {"timestamp":"2024-12-02T15:24:18.918Z"}
+[33merror[39m: GET /api/user/674dd233e46bf49c4746e1f6 - USER NOT FOUND {"timestamp":"2024-12-02T15:28:51.825Z"}
+[33merror[39m: GET /api/product/674dd234e46bf49c4746e21b - PRODUCT NOT FOUND {"timestamp":"2024-12-02T15:28:52.448Z"}
+[33merror[39m: GET /api/user/674dd269e46bf49c4746e235 - USER NOT FOUND {"timestamp":"2024-12-02T15:29:45.264Z"}
+[33merror[39m: GET /api/product/674dd269e46bf49c4746e25a - PRODUCT NOT FOUND {"timestamp":"2024-12-02T15:29:45.789Z"}
+[33merror[39m: GET /api/user/674dd2db0d4e054c932b8dd2 - USER NOT FOUND {"timestamp":"2024-12-02T15:31:39.622Z"}
+[33merror[39m: GET /api/user/674dd2eb0d4e054c932b8e0e - USER NOT FOUND {"timestamp":"2024-12-02T15:31:56.015Z"}
+[31mfatal[39m: POST /api/product - E11000 DUPLICATE KEY ERROR COLLECTION: FINAL-BACKEND3-DEVELOPMENT.PRODUCTS INDEX: CODE_1 DUP KEY: { CODE: "C012" } {"timestamp":"2024-12-02T15:31:56.467Z"}
+[31mfatal[39m: GET /api/product/undefined - CAST TO OBJECTID FAILED FOR VALUE "UNDEFINED" (TYPE STRING) AT PATH "_ID" FOR MODEL "PRODUCTS" {"timestamp":"2024-12-02T15:31:56.478Z"}
+[31mfatal[39m: PUT /api/product/undefined - CAST TO OBJECTID FAILED FOR VALUE "UNDEFINED" (TYPE STRING) AT PATH "_ID" FOR MODEL "PRODUCTS" {"timestamp":"2024-12-02T15:31:56.503Z"}
+[33merror[39m: GET /api/user/674dd30d3409327f5988688d - USER NOT FOUND {"timestamp":"2024-12-02T15:32:29.798Z"}
+[31mfatal[39m: POST /api/product - E11000 DUPLICATE KEY ERROR COLLECTION: FINAL-BACKEND3-DEVELOPMENT.PRODUCTS INDEX: CODE_1 DUP KEY: { CODE: "C012" } {"timestamp":"2024-12-02T15:32:30.274Z"}
+[31mfatal[39m: GET /api/product/undefined - CAST TO OBJECTID FAILED FOR VALUE "UNDEFINED" (TYPE STRING) AT PATH "_ID" FOR MODEL "PRODUCTS" {"timestamp":"2024-12-02T15:32:30.283Z"}
+[31mfatal[39m: PUT /api/product/undefined - CAST TO OBJECTID FAILED FOR VALUE "UNDEFINED" (TYPE STRING) AT PATH "_ID" FOR MODEL "PRODUCTS" {"timestamp":"2024-12-02T15:32:30.313Z"}
+[31mfatal[39m: DELETE /api/product/undefined - CAST TO OBJECTID FAILED FOR VALUE "UNDEFINED" (TYPE STRING) AT PATH "_ID" FOR MODEL "PRODUCTS" {"timestamp":"2024-12-02T15:32:30.320Z"}
+[33merror[39m: GET /api/user/674dd3103409327f598868c8 - USER NOT FOUND {"timestamp":"2024-12-02T15:32:32.815Z"}
+[31mfatal[39m: POST /api/product - E11000 DUPLICATE KEY ERROR COLLECTION: FINAL-BACKEND3-DEVELOPMENT.PRODUCTS INDEX: CODE_1 DUP KEY: { CODE: "C012" } {"timestamp":"2024-12-02T15:32:33.264Z"}
+[31mfatal[39m: GET /api/product/undefined - CAST TO OBJECTID FAILED FOR VALUE "UNDEFINED" (TYPE STRING) AT PATH "_ID" FOR MODEL "PRODUCTS" {"timestamp":"2024-12-02T15:32:33.271Z"}
+[31mfatal[39m: PUT /api/product/undefined - CAST TO OBJECTID FAILED FOR VALUE "UNDEFINED" (TYPE STRING) AT PATH "_ID" FOR MODEL "PRODUCTS" {"timestamp":"2024-12-02T15:32:33.296Z"}
+[31mfatal[39m: DELETE /api/product/undefined - CAST TO OBJECTID FAILED FOR VALUE "UNDEFINED" (TYPE STRING) AT PATH "_ID" FOR MODEL "PRODUCTS" {"timestamp":"2024-12-02T15:32:33.306Z"}
+[33merror[39m: GET /api/user/674dd33b3409327f59886903 - USER NOT FOUND {"timestamp":"2024-12-02T15:33:15.194Z"}
+[33merror[39m: GET /api/product/674dd33b3409327f59886928 - PRODUCT NOT FOUND {"timestamp":"2024-12-02T15:33:15.653Z"}
+[33merror[39m: GET /api/user/674ddb2727f19858bbebf33c - USER NOT FOUND {"timestamp":"2024-12-02T16:07:03.634Z"}
+[31mfatal[39m: POST /api/product - E11000 DUPLICATE KEY ERROR COLLECTION: FINAL-BACKEND3-DEVELOPMENT.PRODUCTS INDEX: CODE_1 DUP KEY: { CODE: "C012" } {"timestamp":"2024-12-02T16:07:04.035Z"}
+[31mfatal[39m: GET /api/product/undefined - CAST TO OBJECTID FAILED FOR VALUE "UNDEFINED" (TYPE STRING) AT PATH "_ID" FOR MODEL "PRODUCTS" {"timestamp":"2024-12-02T16:07:04.043Z"}
+[31mfatal[39m: PUT /api/product/undefined - CAST TO OBJECTID FAILED FOR VALUE "UNDEFINED" (TYPE STRING) AT PATH "_ID" FOR MODEL "PRODUCTS" {"timestamp":"2024-12-02T16:07:04.076Z"}
+[31mfatal[39m: DELETE /api/product/undefined - CAST TO OBJECTID FAILED FOR VALUE "UNDEFINED" (TYPE STRING) AT PATH "_ID" FOR MODEL "PRODUCTS" {"timestamp":"2024-12-02T16:07:04.088Z"}
+[33merror[39m: GET /api/user/674ddb5095093c5b77186024 - USER NOT FOUND {"timestamp":"2024-12-02T16:07:44.583Z"}
+[31mfatal[39m: POST /api/product - E11000 DUPLICATE KEY ERROR COLLECTION: FINAL-BACKEND3-DEVELOPMENT.PRODUCTS INDEX: CODE_1 DUP KEY: { CODE: "C012" } {"timestamp":"2024-12-02T16:07:44.777Z"}
+[31mfatal[39m: POST /api/product - E11000 DUPLICATE KEY ERROR COLLECTION: FINAL-BACKEND3-DEVELOPMENT.PRODUCTS INDEX: CODE_1 DUP KEY: { CODE: "C012" } {"timestamp":"2024-12-02T16:07:45.093Z"}
+[31mfatal[39m: GET /api/product/undefined - CAST TO OBJECTID FAILED FOR VALUE "UNDEFINED" (TYPE STRING) AT PATH "_ID" FOR MODEL "PRODUCTS" {"timestamp":"2024-12-02T16:07:45.100Z"}
+[31mfatal[39m: PUT /api/product/undefined - CAST TO OBJECTID FAILED FOR VALUE "UNDEFINED" (TYPE STRING) AT PATH "_ID" FOR MODEL "PRODUCTS" {"timestamp":"2024-12-02T16:07:45.129Z"}
+[31mfatal[39m: DELETE /api/product/undefined - CAST TO OBJECTID FAILED FOR VALUE "UNDEFINED" (TYPE STRING) AT PATH "_ID" FOR MODEL "PRODUCTS" {"timestamp":"2024-12-02T16:07:45.136Z"}
+[33merror[39m: GET /api/user/674ddb9aee8bae67d51af912 - USER NOT FOUND {"timestamp":"2024-12-02T16:08:59.124Z"}
+[31mfatal[39m: POST /api/product - E11000 DUPLICATE KEY ERROR COLLECTION: FINAL-BACKEND3-DEVELOPMENT.PRODUCTS INDEX: CODE_1 DUP KEY: { CODE: "C012" } {"timestamp":"2024-12-02T16:08:59.596Z"}
+[31mfatal[39m: GET /api/product/undefined - CAST TO OBJECTID FAILED FOR VALUE "UNDEFINED" (TYPE STRING) AT PATH "_ID" FOR MODEL "PRODUCTS" {"timestamp":"2024-12-02T16:08:59.607Z"}
+[31mfatal[39m: PUT /api/product/undefined - CAST TO OBJECTID FAILED FOR VALUE "UNDEFINED" (TYPE STRING) AT PATH "_ID" FOR MODEL "PRODUCTS" {"timestamp":"2024-12-02T16:08:59.637Z"}
+[31mfatal[39m: DELETE /api/product/undefined - CAST TO OBJECTID FAILED FOR VALUE "UNDEFINED" (TYPE STRING) AT PATH "_ID" FOR MODEL "PRODUCTS" {"timestamp":"2024-12-02T16:08:59.645Z"}
+[33merror[39m: GET /api/user/674ddbbdee8bae67d51af94d - USER NOT FOUND {"timestamp":"2024-12-02T16:09:33.824Z"}
+[33merror[39m: GET /api/product/674ddbbeee8bae67d51af972 - PRODUCT NOT FOUND {"timestamp":"2024-12-02T16:09:34.296Z"}
+[33merror[39m: GET /api/user/674ddc782463fb5e3cf87f8e - USER NOT FOUND {"timestamp":"2024-12-02T16:12:40.677Z"}
+[31mfatal[39m: POST /api/product - E11000 DUPLICATE KEY ERROR COLLECTION: FINAL-BACKEND3-DEVELOPMENT.PRODUCTS INDEX: CODE_1 DUP KEY: { CODE: "C012" } {"timestamp":"2024-12-02T16:12:41.145Z"}
+[31mfatal[39m: GET /api/product/undefined - CAST TO OBJECTID FAILED FOR VALUE "UNDEFINED" (TYPE STRING) AT PATH "_ID" FOR MODEL "PRODUCTS" {"timestamp":"2024-12-02T16:12:41.152Z"}
+[31mfatal[39m: PUT /api/product/undefined - CAST TO OBJECTID FAILED FOR VALUE "UNDEFINED" (TYPE STRING) AT PATH "_ID" FOR MODEL "PRODUCTS" {"timestamp":"2024-12-02T16:12:41.184Z"}
+[31mfatal[39m: DELETE /api/product/undefined - CAST TO OBJECTID FAILED FOR VALUE "UNDEFINED" (TYPE STRING) AT PATH "_ID" FOR MODEL "PRODUCTS" {"timestamp":"2024-12-02T16:12:41.196Z"}
+[33merror[39m: GET /api/user/674ddd860bdee85f3100048a - USER NOT FOUND {"timestamp":"2024-12-02T16:17:10.876Z"}
+[31mfatal[39m: DELETE /api/product/undefined - USER NOT FOUND  {"timestamp":"2024-12-02T16:17:11.094Z"}
+[31mfatal[39m: POST /api/product - E11000 DUPLICATE KEY ERROR COLLECTION: FINAL-BACKEND3-DEVELOPMENT.PRODUCTS INDEX: CODE_1 DUP KEY: { CODE: "C012" } {"timestamp":"2024-12-02T16:17:11.279Z"}
+[31mfatal[39m: GET /api/product/undefined - CAST TO OBJECTID FAILED FOR VALUE "UNDEFINED" (TYPE STRING) AT PATH "_ID" FOR MODEL "PRODUCTS" {"timestamp":"2024-12-02T16:17:11.290Z"}
+[31mfatal[39m: PUT /api/product/undefined - CAST TO OBJECTID FAILED FOR VALUE "UNDEFINED" (TYPE STRING) AT PATH "_ID" FOR MODEL "PRODUCTS" {"timestamp":"2024-12-02T16:17:11.325Z"}
+[31mfatal[39m: DELETE /api/product/undefined - CAST TO OBJECTID FAILED FOR VALUE "UNDEFINED" (TYPE STRING) AT PATH "_ID" FOR MODEL "PRODUCTS" {"timestamp":"2024-12-02T16:17:11.335Z"}
+[33merror[39m: GET /api/user/674de4ff5f084aa7284ce168 - USER NOT FOUND {"timestamp":"2024-12-02T16:49:03.450Z"}
+[31mfatal[39m: POST /api/product - E11000 DUPLICATE KEY ERROR COLLECTION: FINAL-BACKEND3-DEVELOPMENT.PRODUCTS INDEX: CODE_1 DUP KEY: { CODE: "C012" } {"timestamp":"2024-12-02T16:49:03.886Z"}
+[31mfatal[39m: GET /api/product/undefined - CAST TO OBJECTID FAILED FOR VALUE "UNDEFINED" (TYPE STRING) AT PATH "_ID" FOR MODEL "PRODUCTS" {"timestamp":"2024-12-02T16:49:03.896Z"}
+[31mfatal[39m: PUT /api/product/undefined - CAST TO OBJECTID FAILED FOR VALUE "UNDEFINED" (TYPE STRING) AT PATH "_ID" FOR MODEL "PRODUCTS" {"timestamp":"2024-12-02T16:49:03.935Z"}
+[31mfatal[39m: DELETE /api/product/undefined - CAST TO OBJECTID FAILED FOR VALUE "UNDEFINED" (TYPE STRING) AT PATH "_ID" FOR MODEL "PRODUCTS" {"timestamp":"2024-12-02T16:49:03.945Z"}
+[33merror[39m: GET /api/user/674de5105f084aa7284ce1a3 - USER NOT FOUND {"timestamp":"2024-12-02T16:49:20.876Z"}
+[33merror[39m: GET /api/product/674de5115f084aa7284ce1c8 - PRODUCT NOT FOUND {"timestamp":"2024-12-02T16:49:21.385Z"}
+[33merror[39m: GET /api/user/674de54584406520bc433558 - USER NOT FOUND {"timestamp":"2024-12-02T16:50:13.270Z"}
+[33merror[39m: GET /api/product/674de54584406520bc43357d - PRODUCT NOT FOUND {"timestamp":"2024-12-02T16:50:13.788Z"}
+[33merror[39m: GET /api/user/674de56efc4ce70c58cce235 - USER NOT FOUND {"timestamp":"2024-12-02T16:50:54.677Z"}
+[33merror[39m: GET /api/product/674de56ffc4ce70c58cce25a - PRODUCT NOT FOUND {"timestamp":"2024-12-02T16:50:55.208Z"}
+[33merror[39m: GET /api/user/674de7aae44299ede72fa4d8 - USER NOT FOUND {"timestamp":"2024-12-02T17:00:26.596Z"}
+[33merror[39m: GET /api/product/674de7abe44299ede72fa502 - PRODUCT NOT FOUND {"timestamp":"2024-12-02T17:00:27.125Z"}
+[33merror[39m: GET /api/user/674e1ffce44299ede72fa51c - USER NOT FOUND {"timestamp":"2024-12-02T21:00:45.195Z"}
+[33merror[39m: GET /api/product/674e1ffde44299ede72fa546 - PRODUCT NOT FOUND {"timestamp":"2024-12-02T21:00:45.994Z"}
+[33merror[39m: GET /api/user/674e21b139f44a6af5ebbabc - USER NOT FOUND {"timestamp":"2024-12-02T21:08:01.865Z"}
+[33merror[39m: GET /api/product/674e21b239f44a6af5ebbae6 - PRODUCT NOT FOUND {"timestamp":"2024-12-02T21:08:02.423Z"}
+[33merror[39m: GET /api/user/674e22dae2c96be5f079976f - USER NOT FOUND {"timestamp":"2024-12-02T21:12:58.624Z"}
+[33merror[39m: GET /api/product/674e22dbe2c96be5f0799799 - PRODUCT NOT FOUND {"timestamp":"2024-12-02T21:12:59.175Z"}
+[33merror[39m: GET /api/user/674e22fab4b51e902054affa - USER NOT FOUND {"timestamp":"2024-12-02T21:13:31.138Z"}
+[33merror[39m: GET /api/product/674e22fbb4b51e902054b024 - PRODUCT NOT FOUND {"timestamp":"2024-12-02T21:13:31.745Z"}
+[33merror[39m: POST /api/cart/672ca16702ceb4403aaf7d8b/product/672b7dd2cb56859478fb39c8 - CART NOT FOUND {"timestamp":"2024-12-02T21:17:11.084Z"}
+[33merror[39m: POST /api/cart/67489be703520eea70576a53/product/672b7dd2cb56859478fb39c8 - PRODUCT NOT FOUND {"timestamp":"2024-12-02T21:17:56.661Z"}
+[33merror[39m: GET /api/user/674e24b1e621301a9c859df5 - USER NOT FOUND {"timestamp":"2024-12-02T21:20:49.818Z"}
+[33merror[39m: GET /api/product/674e24b2e621301a9c859e20 - PRODUCT NOT FOUND {"timestamp":"2024-12-02T21:20:50.368Z"}
+[33merror[39m: GET /api/user/674e24e0343f0bddcbca9235 - USER NOT FOUND {"timestamp":"2024-12-02T21:21:36.203Z"}
+[33merror[39m: GET /api/product/674e24e0343f0bddcbca9260 - PRODUCT NOT FOUND {"timestamp":"2024-12-02T21:21:36.761Z"}
+[33merror[39m: GET /api/user/674e256dda82f34036ce8c63 - USER NOT FOUND {"timestamp":"2024-12-02T21:23:57.810Z"}
+[31mfatal[39m: POST /api/cart/674e256dda82f34036ce8c77/product/undefined - CAST TO OBJECTID FAILED FOR VALUE "UNDEFINED" (TYPE STRING) AT PATH "_ID" FOR MODEL "PRODUCTS" {"timestamp":"2024-12-02T21:23:58.076Z"}
+[33merror[39m: GET /api/product/674e256eda82f34036ce8c90 - PRODUCT NOT FOUND {"timestamp":"2024-12-02T21:23:58.351Z"}
+[33merror[39m: GET /api/user/674e258ea0e06ef826179e6c - USER NOT FOUND {"timestamp":"2024-12-02T21:24:30.990Z"}
+[33merror[39m: GET /api/product/674e258fa0e06ef826179e9c - PRODUCT NOT FOUND {"timestamp":"2024-12-02T21:24:31.539Z"}
+[33merror[39m: GET /api/user/674e25e8ddf918703ed0d744 - USER NOT FOUND {"timestamp":"2024-12-02T21:26:00.834Z"}
+[33merror[39m: GET /api/product/674e25e9ddf918703ed0d775 - PRODUCT NOT FOUND {"timestamp":"2024-12-02T21:26:01.406Z"}
+[33merror[39m: GET /api/user/674e26675a858d04a932748b - USER NOT FOUND {"timestamp":"2024-12-02T21:28:07.198Z"}
+[33merror[39m: GET /api/product/674e26675a858d04a93274bd - PRODUCT NOT FOUND {"timestamp":"2024-12-02T21:28:07.759Z"}
+[33merror[39m: GET /api/user/674e268cf3ddf939e365cd49 - USER NOT FOUND {"timestamp":"2024-12-02T21:28:44.887Z"}
+[33merror[39m: GET /api/product/674e268df3ddf939e365cd7c - PRODUCT NOT FOUND {"timestamp":"2024-12-02T21:28:45.452Z"}
+[33merror[39m: GET /api/user/674e26c2ba0de75e12961c5a - USER NOT FOUND {"timestamp":"2024-12-02T21:29:38.882Z"}
+[33merror[39m: POST /api/cart/674e26c3ba0de75e12961c6e/product/674e26c3ba0de75e12961c7a - OUT OF STOCK {"timestamp":"2024-12-02T21:29:39.183Z"}
+[33merror[39m: GET /api/product/674e26c3ba0de75e12961c8c - PRODUCT NOT FOUND {"timestamp":"2024-12-02T21:29:39.451Z"}
+[33merror[39m: GET /api/user/674e26e2d8f28e44ee0d75d7 - USER NOT FOUND {"timestamp":"2024-12-02T21:30:10.618Z"}
+[33merror[39m: GET /api/product/674e26e3d8f28e44ee0d760b - PRODUCT NOT FOUND {"timestamp":"2024-12-02T21:30:11.150Z"}
+[33merror[39m: GET /api/user/674e270714d8a258e6285a85 - USER NOT FOUND {"timestamp":"2024-12-02T21:30:47.464Z"}
+[33merror[39m: GET /api/product/674e270714d8a258e6285ab6 - PRODUCT NOT FOUND {"timestamp":"2024-12-02T21:30:48.024Z"}
+[33merror[39m: GET /api/user/674e271bbb2f447b533e490d - USER NOT FOUND {"timestamp":"2024-12-02T21:31:07.633Z"}
+[33merror[39m: GET /api/product/674e271cbb2f447b533e4942 - PRODUCT NOT FOUND {"timestamp":"2024-12-02T21:31:08.255Z"}
+[33merror[39m: GET /api/user/674e27709136ecc31db526a3 - USER NOT FOUND {"timestamp":"2024-12-02T21:32:32.252Z"}
+[33merror[39m: GET /api/product/674e27709136ecc31db526d9 - PRODUCT NOT FOUND {"timestamp":"2024-12-02T21:32:32.816Z"}
+[33merror[39m: GET /api/user/674e277d013261586c18118d - USER NOT FOUND {"timestamp":"2024-12-02T21:32:45.684Z"}
+[33merror[39m: GET /api/product/674e277e013261586c1811c4 - PRODUCT NOT FOUND {"timestamp":"2024-12-02T21:32:46.253Z"}
+[33merror[39m: GET /api/user/674e2789ee298d65fa2c1ee2 - USER NOT FOUND {"timestamp":"2024-12-02T21:32:58.104Z"}
+[33merror[39m: GET /api/product/674e278aee298d65fa2c1f1a - PRODUCT NOT FOUND {"timestamp":"2024-12-02T21:32:58.662Z"}
+[33merror[39m: GET /api/user/674e27940f5d87b2251da966 - USER NOT FOUND {"timestamp":"2024-12-02T21:33:08.173Z"}
+[33merror[39m: GET /api/product/674e27940f5d87b2251da99f - PRODUCT NOT FOUND {"timestamp":"2024-12-02T21:33:08.737Z"}
+[33merror[39m: GET /api/user/674e279f7227a998f72ce754 - USER NOT FOUND {"timestamp":"2024-12-02T21:33:20.117Z"}
+[33merror[39m: GET /api/product/674e27a07227a998f72ce78e - PRODUCT NOT FOUND {"timestamp":"2024-12-02T21:33:20.686Z"}
+[33merror[39m: GET /api/user/674e27a77227a998f72ce7a8 - USER NOT FOUND {"timestamp":"2024-12-02T21:33:27.836Z"}
+[33merror[39m: GET /api/product/674e27a87227a998f72ce7e3 - PRODUCT NOT FOUND {"timestamp":"2024-12-02T21:33:28.361Z"}
+[33merror[39m: GET /api/user/674e27aa7227a998f72ce7fd - USER NOT FOUND {"timestamp":"2024-12-02T21:33:30.831Z"}
+[33merror[39m: GET /api/product/674e27ab7227a998f72ce839 - PRODUCT NOT FOUND {"timestamp":"2024-12-02T21:33:31.369Z"}
+[33merror[39m: GET /api/user/674e27ad7227a998f72ce853 - USER NOT FOUND {"timestamp":"2024-12-02T21:33:33.617Z"}
+[33merror[39m: GET /api/product/674e27ae7227a998f72ce890 - PRODUCT NOT FOUND {"timestamp":"2024-12-02T21:33:34.152Z"}
+[33merror[39m: GET /api/user/674e27b07227a998f72ce8aa - USER NOT FOUND {"timestamp":"2024-12-02T21:33:36.456Z"}
+[33merror[39m: GET /api/product/674e27b07227a998f72ce8e8 - PRODUCT NOT FOUND {"timestamp":"2024-12-02T21:33:36.967Z"}
+[33merror[39m: GET /api/user/674e27bdedb3eeef33b78a9d - USER NOT FOUND {"timestamp":"2024-12-02T21:33:49.254Z"}
+[33merror[39m: GET /api/product/674e27bdedb3eeef33b78adc - PRODUCT NOT FOUND {"timestamp":"2024-12-02T21:33:49.812Z"}
+[33merror[39m: GET /api/user/674e27bfedb3eeef33b78af6 - USER NOT FOUND {"timestamp":"2024-12-02T21:33:52.083Z"}
+[33merror[39m: GET /api/product/674e27c0edb3eeef33b78b36 - PRODUCT NOT FOUND {"timestamp":"2024-12-02T21:33:52.601Z"}
+[33merror[39m: GET /api/user/674e27c8edb3eeef33b78b50 - USER NOT FOUND {"timestamp":"2024-12-02T21:34:00.942Z"}
+[33merror[39m: GET /api/product/674e27c9edb3eeef33b78b91 - PRODUCT NOT FOUND {"timestamp":"2024-12-02T21:34:01.610Z"}
+[33merror[39m: GET /api/user/674e27d1a0d0de6c863c263b - USER NOT FOUND {"timestamp":"2024-12-02T21:34:10.002Z"}
+[33merror[39m: GET /api/product/674e27d2a0d0de6c863c267d - PRODUCT NOT FOUND {"timestamp":"2024-12-02T21:34:10.575Z"}
+[33merror[39m: PUT /api/cart/672ca16702ceb4403aaf7d8b/product/672b7dd2cb56859478fb39c8 - CART NOT FOUND {"timestamp":"2024-12-02T21:36:26.567Z"}
+[33merror[39m: PUT /api/cart/672ca16702ceb4403aaf7d8b/product/672b7dd2cb56859478fb39c8 - CART NOT FOUND {"timestamp":"2024-12-02T21:36:35.349Z"}
