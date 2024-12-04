@@ -13,3 +13,5 @@
 [34minfo[39m: Connected to MongoDB {"timestamp":"2024-12-04T13:23:20.773Z"}
 [34minfo[39m: Server online PORT:8080 Mode Server: [[ development ]] {"timestamp":"2024-12-04T13:41:48.739Z"}
 [34minfo[39m: Connected to MongoDB {"timestamp":"2024-12-04T13:41:48.761Z"}
+[34minfo[39m: Server online PORT:8080 Mode Server: [[ production ]] {"timestamp":"2024-12-04T15:31:37.387Z"}
+[34minfo[39m: Connected to MongoDB {"timestamp":"2024-12-04T15:31:38.534Z"}
