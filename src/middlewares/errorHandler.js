@@ -12,7 +12,6 @@ function errorHandler(error, req, res, next) {
   } else {
     winstonLogger.fatal(message + (details ? ` - Details: ${details}` : ""));
     // sendErrorEmail(message) //here can send email
-    // console.log(error);
   }
 
   const { fatal } = errors;

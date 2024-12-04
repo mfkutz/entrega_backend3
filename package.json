@@ -7,7 +7,10 @@
     "dev": "nodemon src/server.js -m development",
     "testing": "nodemon src/server -m testing",
     "start": "node src/server.js -m production",
-    "test": "mocha 'test/**/*.test.js'"
+    "test": "mocha 'test/**/*.test.js'",
+    "image": "docker build -t backend3kutzner .",
+    "rename": "docker tag backend3kutzner socialcode88/backend3kutzner:1.0.0",
+    "push": "docker push socialcode88/backend3kutzner:1.0.0"
   },
   "keywords": [],
   "author": "",

@@ -9,7 +9,6 @@ describe("Test Carts API's With JWT", async () => {
   before(async () => {
     await registerAndLoginUser();
   });
-
   after(async () => {
     await deleteUser();
   });
@@ -19,7 +18,6 @@ describe("Test Carts API's With JWT", async () => {
       const res = await requester.post(`/cart`).set("Authorization", `Bearer ${validJWT.value}`);
       expect(res.status).to.equal(200);
       expect(res.body).to.have.property("result", "success");
-
       idNewCart = res.body.cart._id;
     });
 
@@ -27,7 +25,6 @@ describe("Test Carts API's With JWT", async () => {
       const res = await requester.get(`/cart`).set("Authorization", `Bearer ${validJWT.value}`);
       expect(res.status).to.equal(200);
       expect(res.body).to.have.property("result", "success");
-
       expect(res.status).not.to.equal(404);
     });
 
@@ -36,7 +33,6 @@ describe("Test Carts API's With JWT", async () => {
       expect(res.status).to.equal(200);
       expect(res.body).to.have.property("response", "success");
       expect(res.body.cart).to.have.property("_id");
-
       expect(res.status).not.to.equal(404);
     });
 
@@ -52,10 +48,8 @@ describe("Test Carts API's With JWT", async () => {
           .post(`/cart/${idNewCart}/product/${idProduct}`)
           .set("Authorization", `Bearer ${validJWT.value}`)
           .send({ quantity: 1 });
-
         expect(res.status).to.equal(200);
         expect(res.body).to.have.property("result", "Success");
-
         expect(res.status).not.to.equal(404);
       });
 
@@ -64,11 +58,69 @@ describe("Test Carts API's With JWT", async () => {
           .put(`/cart/${idNewCart}/product/${idProduct}`)
           .set("Authorization", `Bearer ${validJWT.value}`)
           .send({ quantity: 2 });
-
         expect(res.status).to.equal(200);
         expect(res.body).to.have.property("result", "Success");
-
         expect(res.status).not.to.equal(404);
+      });
+
+      it("Should update cart with an array ", async () => {
+        const productsObj = {
+          products: [
+            {
+              product: `${idProduct}`,
+              quantity: 1,
+            },
+            {
+              product: `${idProduct}`,
+              quantity: 1,
+            },
+            {
+              product: `${idProduct}`,
+              quantity: 1,
+            },
+          ],
+        };
+
+        const res = await requester
+          .put(`/cart/${idNewCart}`)
+          .set("Authorization", `Bearer ${validJWT.value}`)
+          .send(productsObj);
+        expect(res.status).to.equal(200);
+        expect(res.body).to.have.property("result", "Success");
+        expect(res.status).not.to.equal(404);
+      });
+
+      it("Should delete product from cart", async () => {
+        const res = await requester
+          .delete(`/cart/${idNewCart}/product/${idProduct}`)
+          .set("Authorization", `Bearer ${validJWT.value}`);
+        expect(res.status).to.equal(200);
+        expect(res.body).to.have.property("result", "Success");
+        expect(res.status).not.to.equal(404);
+      });
+
+      it("Should remove a product from the cart and validate success", async () => {
+        const res = await requester.delete(`/cart/${idNewCart}`).set("Authorization", `Bearer ${validJWT.value}`);
+        expect(res.status).to.equal(200);
+        expect(res.body).to.have.property("result", "Success");
+        expect(res.status).not.to.equal(404);
+      });
+    });
+
+    describe("Purchase Test API", function () {
+      it("Should generate purchase", async function () {
+        this.timeout(4000);
+        await requester
+          .post(`/cart/${idNewCart}/product/${idProduct}`)
+          .set("Authorization", `Bearer ${validJWT.value}`)
+          .send({ quantity: 1 });
+        const resPurchase = await requester
+          .post(`/cart/${idNewCart}/purchase`)
+          .set("Authorization", `Bearer ${validJWT.value}`);
+        expect(resPurchase.status).to.equal(200);
+        expect(resPurchase.body).to.have.property("message", "Buy success");
+        expect(resPurchase.body.ticket).to.include.all.keys("code", "amount", "purchaser");
+        expect(resPurchase.status).not.to.equal(404);
       });
     });
 

@@ -1,6 +1,6 @@
 import supertest from "supertest";
 import { config } from "../src/config/config.js";
-import { productTest, userToCreate } from "./data/index.js";
+import { userToCreate } from "./data/index.js";
 
 const requester = supertest(`http://localhost:${config.PORT}/api`);
 

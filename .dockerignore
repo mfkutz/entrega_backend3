@@ -1,0 +1,13 @@
+# Ignorar node_modules en la construcción de la imagen Docker
+node_modules
+
+# Ignorar archivos de configuración específicos de desarrollo
+*.log
+
+# Ignorar archivos de configuración de sistema
+.DS_Store
+.vscode
+.idea
+
+# Ignorar otros archivos temporales
+npm-debug.log
