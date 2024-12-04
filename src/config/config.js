@@ -25,10 +25,8 @@ switch (mode) {
 
 if (path) {
   dotenv.config({ path });
-  console.log("como path tiene algo, me vine para este equipo");
 } else {
   dotenv.config();
-  console.log("Me vine para este lado");
 }
 
 export const config = {

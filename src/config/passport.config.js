@@ -15,8 +15,6 @@ function initializePassport() {
     return req && req.cookies ? req.cookies.token : null;
   };
 
-  console.log("see here", config.JWT_SECRET);
-  console.log("See other", config.MODE);
   //JWT Strategy
   passport.use(
     "jwt",
