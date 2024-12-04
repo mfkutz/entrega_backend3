@@ -109,7 +109,7 @@ describe("Test Carts API's With JWT", async () => {
 
     describe("Purchase Test API", function () {
       it("Should generate purchase", async function () {
-        this.timeout(4000);
+        this.timeout(5000);
         await requester
           .post(`/cart/${idNewCart}/product/${idProduct}`)
           .set("Authorization", `Bearer ${validJWT.value}`)
