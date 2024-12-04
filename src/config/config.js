@@ -11,28 +11,19 @@ const { mode } = program.opts();
 
 let path;
 
-switch (mode) {
-  case "development":
-  case "dev":
-    path = ".env.development";
-    break;
-
-  case "testing":
-  case "test":
-    path = ".env.testing";
-    break;
-
-  case "production":
-  case "prod":
-    path = ".env";
-    break;
+if (mode === "development" || mode === "dev") {
+  path = ".env.development";
+} else if (mode === "testing" || mode === "test") {
+  path = ".env.testing";
 }
 
-dotenv.config({ path });
+if (path) {
+  dotenv.config({ path });
+}
 
 export const config = {
   PORT: process.env.PORT || process.env.LOCAL,
-  MODE: process.env.MODE,
+  MODE: mode,
   MONGO_URI: process.env.MONGO_URI,
   JWT_SECRET: process.env.JWT_SECRET,
   SIGN_COOKIE: process.env.SIGN_COOKIE,
