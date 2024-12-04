@@ -16,6 +16,7 @@ function initializePassport() {
   };
 
   console.log("see here", config.JWT_SECRET);
+  console.log("See other", config.MODE);
   //JWT Strategy
   passport.use(
     "jwt",
