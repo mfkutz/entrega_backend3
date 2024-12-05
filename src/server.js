@@ -1,5 +1,6 @@
 import express from "express";
 import cookieParser from "cookie-parser";
+import cors from "cors";
 import passport from "passport";
 import { __dirname } from "./path.js";
 import { connectDB } from "./config/db.connect.js";
@@ -25,6 +26,14 @@ const PORT = config.PORT;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, "..", "public")));
+app.use(
+  cors({
+    origin: (origin, callback) => {
+      callback(null, origin || "*");
+    },
+    credentials: true,
+  })
+);
 app.use(cookieParser(config.SIGN_COOKIE));
 app.use(
   compression({
